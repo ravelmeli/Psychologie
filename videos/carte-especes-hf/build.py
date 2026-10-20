@@ -19,11 +19,11 @@ SFX_LIB = ROOT.parent.parent / ".claude/skills/media-use/audio/assets/sfx"
 
 W, H = 1080, 1920
 # Personnage : échelle commune, aligné sur les pieds
-SCALE = 0.70
-FEET_X = 270
+SCALE = 0.68
+FEET_X = 228
 BASELINE = 1470
 # Cartes : dans la zone sûre titre (80 %), à gauche de la colonne d'icônes TikTok
-CARD_LEFT, CARD_TOP, CARD_W = 520, 330, 452
+CARD_LEFT, CARD_TOP, CARD_W = 558, 330, 414
 
 COLORS = {
     "red": "#d9453b",
@@ -160,7 +160,7 @@ CARD_CSS = """        #%ID% .card {
         #%ID% .sub { font-weight: 700; font-size: 38px; line-height: 1.2; }
         #%ID% .cta {
           display: flex; align-items: center; gap: 14px; padding: 16px 22px; border-radius: 40px;
-          background: #16140f; color: #ffffff; font-weight: 900; font-size: 24px; white-space: nowrap;
+          background: #16140f; color: #ffffff; font-weight: 900; font-size: 20px; white-space: nowrap;
         }
         #%ID% .arrow {
           width: 18px; height: 18px; border-right: 5px solid #f2b84b; border-bottom: 5px solid #f2b84b;
@@ -640,8 +640,8 @@ def render_root(plan, sfx_tags):
     <div id="root" data-composition-id="main" data-start="0" data-duration="{fmt(D)}" data-width="{W}" data-height="{H}">
       <div id="cam">
           {host("decor", 0, D, 1)}
-          {host("character", 0, D, 2)}
 {cards}
+          {host("character", 0, D, 2)}
       </div>
       {host("hud", 0, D, 4)}
       {host("captions", 0, D, 5, "captions")}

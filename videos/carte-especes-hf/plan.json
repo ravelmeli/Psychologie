@@ -141,7 +141,7 @@
       "id": "c9", "start": 57.96, "end": 62.4, "center": true,
       "items": [
         { "type": "label", "text": "À vous" },
-        { "type": "title", "text": "ET VOUS ?", "size": 66 },
+        { "type": "title", "text": "ET VOUS ?", "size": 56 },
         { "type": "sub", "text": "Quelle dépense vous fait le plus mal ?", "at": 58.9 },
         { "type": "cta", "text": "Dites-le en commentaire", "at": 59.8 }
       ]

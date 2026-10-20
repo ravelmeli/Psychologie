@@ -2,7 +2,7 @@
   "title": "Pourquoi on dépense plus avec la carte qu'en espèces",
   "duration": 62.4,
   "voice": { "src": "assets/audio/voix.wav", "duration": 61.16 },
-  "music": { "src": "assets/audio/bgm.wav", "volume": 0.16 },
+  "music": { "src": "assets/audio/bgm.wav", "volume": 0.35 },
   "transcript": "transcript.json",
   "fixes": { "quelles": "quelle", "dépenses": "dépense" },
 

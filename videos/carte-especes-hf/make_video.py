@@ -75,7 +75,7 @@ def main():
     if (ROOT / plan.get("music", {}).get("src", "-")).exists():
         # Creuse la musique sous la voix (dips de fréquence + niveau), voir /hyperframes-audio
         run(["node", str(ROOT.parent.parent / ".claude/skills/hyperframes-audio/scripts/carve.mjs"),
-             "--comp", "index.html", "--bed", "music", "--voice", "voice"])
+             "--comp", "index.html", "--bed", "music", "--voice", "voice", "--strength", "0.4"])
     run(HF + ["check"])
     if not args.no_render:
         run(HF + ["render", "-o", args.output, "-q", "delivery"])

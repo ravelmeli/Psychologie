@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #character {
+          position: absolute;
+          inset: 0;
+          font-family: Montserrat, sans-serif;
+          color: #16140f;
+        }
+        #character .floor-shadow {
+          position: absolute; left: 40px; top: 1440px; width: 460px; height: 60px;
+          border-radius: 50%; background: radial-gradient(ellipse at center, rgba(40, 28, 14, 0.28), transparent 70%);
+        }
+        #character .rig, #character .inner { position: absolute; inset: 0; transform-origin: 270px 1470px; }
+        #character .pose { position: absolute; opacity: 0; }
+      </style>
+      <div id="character" data-composition-id="character" data-width="1080" data-height="1920">
+        <div class="floor-shadow"></div>
+        <div class="rig" id="character-rig">
+          <div class="inner" id="character-inner">
+            <img id="character-02_explique" class="pose" src="assets/poses/02_explique.png" alt="" style="left:-34.1px;top:333.9px;width:655.9px;height:1174.6px" />
+            <img id="character-03_designe_droite" class="pose" src="assets/poses/03_designe_droite.png" alt="" style="left:-31.7px;top:331.8px;width:655.9px;height:1174.6px" />
+            <img id="character-04_reflechit" class="pose" src="assets/poses/04_reflechit.png" alt="" style="left:-90.8px;top:338.8px;width:655.9px;height:1174.6px" />
+            <img id="character-05_tente_achat" class="pose" src="assets/poses/05_tente_achat.png" alt="" style="left:-86.3px;top:328.3px;width:655.9px;height:1174.6px" />
+            <img id="character-06_inquiet" class="pose" src="assets/poses/06_inquiet.png" alt="" style="left:-77.5px;top:333.2px;width:656.6px;height:1173.9px" />
+            <img id="character-07_surpris" class="pose" src="assets/poses/07_surpris.png" alt="" style="left:-81.4px;top:346.5px;width:655.9px;height:1174.6px" />
+            <img id="character-08_rassure" class="pose" src="assets/poses/08_rassure.png" alt="" style="left:-77.2px;top:330.4px;width:655.9px;height:1174.6px" />
+            <img id="character-10_rit_content" class="pose" src="assets/poses/10_rit_content.png" alt="" style="left:-70.5px;top:335.3px;width:656.6px;height:1173.9px" />
+            <img id="character-11_triste_decu" class="pose" src="assets/poses/11_triste_decu.png" alt="" style="left:-92.6px;top:340.9px;width:655.9px;height:1174.6px" />
+            <img id="character-12_tient_telephone" class="pose" src="assets/poses/12_tient_telephone.png" alt="" style="left:-95.8px;top:336.0px;width:655.9px;height:1174.6px" />
+            <img id="character-13_compte_doigts" class="pose" src="assets/poses/13_compte_doigts.png" alt="" style="left:-101.7px;top:342.3px;width:655.9px;height:1174.6px" />
+            <img id="character-14_enerve" class="pose" src="assets/poses/14_enerve.png" alt="" style="left:-89.8px;top:329.7px;width:655.9px;height:1174.6px" />
+          </div>
+        </div>
+      </div>
+      <script>
+        (() => {
+          const tl = gsap.timeline({ paused: true });
+          const POSES = [[0.0, "04_reflechit"], [3.08, "06_inquiet"], [4.88, "03_designe_droite"], [7.14, "02_explique"], [11.14, "03_designe_droite"], [14.04, "06_inquiet"], [16.56, "12_tient_telephone"], [19.4, "08_rassure"], [22.14, "02_explique"], [26.5, "07_surpris"], [29.74, "13_compte_doigts"], [33.7, "02_explique"], [37.44, "03_designe_droite"], [39.34, "05_tente_achat"], [42.5, "14_enerve"], [45.72, "06_inquiet"], [48.24, "11_triste_decu"], [50.98, "02_explique"], [53.08, "03_designe_droite"], [56.54, "08_rassure"], [57.96, "03_designe_droite"], [59.5, "04_reflechit"], [61.2, "10_rit_content"]];
+          const DUR = 62.4;
+          POSES.forEach(([t, name], i) => {
+            const el = "#character-" + name;
+            const next = POSES[i + 1];
+            if (i === 0) {
+              tl.set(el, { opacity: 1 }, 0);
+            } else {
+              tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.12, ease: "none", immediateRender: false }, t - 0.06);
+              tl.fromTo("#character-rig", { scale: 0.97 }, { scale: 1, duration: 0.4, ease: "back.out(2.5)", immediateRender: false }, t);
+            }
+            if (next) {
+              tl.fromTo(el, { opacity: 1 }, { opacity: 0, duration: 0.12, ease: "none", immediateRender: false }, next[0] - 0.06);
+            }
+          });
+          tl.fromTo("#character-inner", { scaleY: 1 }, { scaleY: 1.008, duration: 1.5, ease: "sine.inOut", yoyo: true, repeat: 40 }, 0);
+          window.__timelines["character"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

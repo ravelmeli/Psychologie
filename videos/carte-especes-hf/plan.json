@@ -1,0 +1,172 @@
+{
+  "title": "Pourquoi on dépense plus avec la carte qu'en espèces",
+  "duration": 62.4,
+  "voice": { "src": "assets/audio/voix.wav", "duration": 61.16 },
+  "transcript": "transcript.json",
+  "fixes": { "quelles": "quelle", "dépenses": "dépense" },
+  "keywords": ["douleur", "carte", "espèces", "invisible", "double", "cher", "simplifie", "clic", "piège", "relevé", "visible", "contrôle"],
+
+  "header": { "tag": "PSY · ARGENT", "title": "CARTE OU ESPÈCES ?" },
+  "sections": [
+    [0, "INTRO"],
+    [7.14, "01 · LA DOULEUR"],
+    [22.14, "02 · L'ÉTUDE"],
+    [37.44, "03 · LE PIÈGE"],
+    [50.98, "04 · LA SOLUTION"]
+  ],
+
+  "poses": [
+    [0.0, "04_reflechit"],
+    [3.08, "06_inquiet"],
+    [4.88, "03_designe_droite"],
+    [7.14, "02_explique"],
+    [11.14, "03_designe_droite"],
+    [14.04, "06_inquiet"],
+    [16.56, "12_tient_telephone"],
+    [19.4, "08_rassure"],
+    [22.14, "02_explique"],
+    [26.5, "07_surpris"],
+    [29.74, "13_compte_doigts"],
+    [33.7, "02_explique"],
+    [37.44, "03_designe_droite"],
+    [39.34, "05_tente_achat"],
+    [42.5, "14_enerve"],
+    [45.72, "06_inquiet"],
+    [48.24, "11_triste_decu"],
+    [50.98, "02_explique"],
+    [53.08, "03_designe_droite"],
+    [56.54, "08_rassure"],
+    [57.96, "03_designe_droite"],
+    [59.5, "04_reflechit"],
+    [61.2, "10_rit_content"]
+  ],
+
+  "camera": [
+    { "at": 26.5, "until": 29.74, "scale": 1.06 },
+    { "at": 48.24, "until": 50.98, "scale": 1.06 },
+    { "at": 56.96, "until": 57.96, "scale": 1.05 }
+  ],
+
+  "cards": [
+    {
+      "id": "c1", "start": 0, "end": 7.14,
+      "items": [
+        { "type": "label", "text": "La question" },
+        { "type": "title", "text": "POURQUOI LA **CARTE** FAIT DÉPENSER PLUS ?", "size": 52 },
+        { "type": "duel", "note": "20 €", "switch_at": 5.3 },
+        { "type": "pills", "items": [
+          { "text": "AÏE !", "at": 3.08, "color": "red" },
+          { "text": "BIP", "at": 5.6, "color": "green" },
+          { "text": "… PLUS RIEN", "at": 6.14 }
+        ] }
+      ]
+    },
+    {
+      "id": "c2", "start": 7.14, "end": 16.56,
+      "items": [
+        { "type": "label", "text": "Le concept" },
+        { "type": "title", "text": "LA DOULEUR **DE PAYER**", "mark_at": 8.72 },
+        { "type": "meter", "label": "DOULEUR", "tag": "ESPÈCES", "from": 0, "to": 0.85, "at": 11.52, "color": "red" },
+        { "type": "stamp", "text": "PERTE ENREGISTRÉE", "at": 15.42, "color": "red" }
+      ]
+    },
+    {
+      "id": "c3", "start": 16.56, "end": 22.14,
+      "items": [
+        { "type": "label", "text": "Avec la carte" },
+        { "type": "meter", "label": "DOULEUR", "tag": "CARTE", "from": 0.85, "to": 0.08, "at": 17.2, "color_from": "red", "color": "green" },
+        { "type": "title", "text": "INVISIBLE", "at": 18.16, "size": 72 },
+        { "type": "pills", "items": [
+          { "text": "1 GESTE", "at": 19.54 },
+          { "text": "1 BIP", "at": 20.38 },
+          { "text": "RÉGLÉ", "at": 21.06, "color": "green" }
+        ] }
+      ]
+    },
+    {
+      "id": "c4", "start": 22.14, "end": 29.74,
+      "items": [
+        { "type": "label", "text": "L'étude · MIT 2001" },
+        { "type": "title", "text": "ENCHÈRES", "at": 24.84 },
+        { "type": "bars", "items": [
+          { "label": "ESPÈCES", "to": 0.45, "at": 25.2, "color": "light" },
+          { "label": "CARTE", "to": 0.45, "at": 25.5, "grow_to": 0.92, "grow_at": 27.12 }
+        ], "badge": { "text": "×2", "at": 28.32 } }
+      ]
+    },
+    {
+      "id": "c5", "start": 29.74, "end": 37.44,
+      "items": [
+        { "type": "label", "text": "Ce qui se passe" },
+        { "type": "rows", "items": [
+          { "text": "L'argent n'a pas l'air réel", "at": 30.74 },
+          { "text": "On accepte de payer plus cher", "at": 32.92 },
+          { "text": "Le cerveau simplifie", "at": 35.94 }
+        ] }
+      ]
+    },
+    {
+      "id": "c6", "start": 37.44, "end": 45.72,
+      "items": [
+        { "type": "label", "text": "Les commerces le savent" },
+        { "type": "pills", "dir": "col", "items": [
+          { "text": "PAIEMENT EN 1 CLIC", "at": 39.34 },
+          { "text": "ABONNEMENT AUTO", "at": 39.72 },
+          { "text": "PAYER EN 3 FOIS", "at": 41.48 }
+        ] },
+        { "type": "button", "text": "ACHETER", "at": 38.0, "pulse_at": 39.0, "pulse_until": 45.0 }
+      ]
+    },
+    {
+      "id": "c7", "start": 45.72, "end": 50.98, "shake_at": 50.18,
+      "items": [
+        { "type": "label", "text": "Le relevé du mois" },
+        { "type": "receipt", "start": 46.2, "step": 0.36, "lines": [
+          ["Café", "3,50 €"], ["Livraison", "24,90 €"], ["Abonnement", "13,99 €"], ["Appli", "9,99 €"], ["+ 31 achats", "…"]
+        ], "total": { "left": "TOTAL", "right": "-340 €", "at": 48.24 } }
+      ]
+    },
+    {
+      "id": "c8", "start": 50.98, "end": 57.96,
+      "items": [
+        { "type": "label", "text": "Reprendre le contrôle" },
+        { "type": "rows", "num": "yellow", "items": [
+          { "text": "Une semaine en espèces", "at": 53.08 },
+          { "text": "Un retrait fixe chaque lundi", "at": 54.32 }
+        ] },
+        { "type": "stamp", "text": "RENDEZ LA DOULEUR VISIBLE", "at": 56.96, "color": "yellow" }
+      ]
+    },
+    {
+      "id": "c9", "start": 57.96, "end": 62.4, "center": true,
+      "items": [
+        { "type": "label", "text": "À vous" },
+        { "type": "title", "text": "ET VOUS ?", "size": 66 },
+        { "type": "sub", "text": "Quelle dépense vous fait le plus mal ?", "at": 58.9 },
+        { "type": "cta", "text": "Dites-le en commentaire", "at": 59.8 }
+      ]
+    }
+  ],
+
+  "sfx": {
+    "card_whoosh": { "file": "whoosh-short", "volume": 0.35 },
+    "cues": [
+      { "at": 3.08, "file": "pop", "volume": 0.4 },
+      { "at": 5.6, "file": "ping", "volume": 0.35 },
+      { "at": 15.42, "file": "impact-bass-1", "volume": 0.45 },
+      { "at": 19.54, "file": "click-soft", "volume": 0.5 },
+      { "at": 20.38, "file": "ping", "volume": 0.35 },
+      { "at": 21.06, "file": "pop", "volume": 0.35 },
+      { "at": 28.32, "file": "sparkle", "volume": 0.4 },
+      { "at": 30.74, "file": "pop", "volume": 0.3 },
+      { "at": 32.92, "file": "pop", "volume": 0.3 },
+      { "at": 35.94, "file": "pop", "volume": 0.3 },
+      { "at": 39.34, "file": "click-soft", "volume": 0.5 },
+      { "at": 39.72, "file": "click-soft", "volume": 0.5 },
+      { "at": 41.48, "file": "click-soft", "volume": 0.5 },
+      { "at": 48.24, "file": "impact-bass-2", "volume": 0.5 },
+      { "at": 56.96, "file": "impact-bass-1", "volume": 0.45 },
+      { "at": 59.8, "file": "notification", "volume": 0.35 }
+    ]
+  }
+}

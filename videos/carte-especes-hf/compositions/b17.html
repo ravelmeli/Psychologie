@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #b17 {
+          position: absolute;
+          inset: 0;
+          font-family: Montserrat, sans-serif;
+          color: #16140f;
+        }
+        #b17 .beat {
+          position: absolute; left: 428px; top: 460px; width: 508px; height: 820px;
+          display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px;
+          text-align: center;
+        }
+        #b17 .hid { opacity: 0; }
+        #b17 .ic { display: block; filter: drop-shadow(0 14px 18px rgba(40, 30, 10, 0.22)); }
+        #b17 .icons { display: flex; align-items: center; justify-content: center; gap: 22px; }
+        #b17 .sep { font-weight: 900; font-size: 64px; color: #a86f0c; }
+        #b17 .title { font-weight: 900; font-size: 66px; line-height: 1.04; letter-spacing: -0.02em; }
+        #b17 .sub { display: flex; align-items: center; gap: 14px; font-weight: 700; font-size: 38px; line-height: 1.2; color: #3a362e; }
+        #b17 .badge {
+          position: absolute; right: -6px; top: 0; display: flex; flex-direction: column; align-items: center; gap: 6px;
+          font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 30px; color: #c0352c;
+        }
+        #b17 .stamp {
+          font-weight: 900; font-size: 40px; letter-spacing: 0.02em; padding: 16px 24px;
+          border: 7px solid #d9453b; color: #c0352c; border-radius: 16px; background: #ffffff;
+        }
+        #b17 .stamp.yellow { border-color: #c98a12; color: #16140f; background: #f2b84b; }
+        #b17 .meter { width: 100%; }
+        #b17 .meter-top {
+          display: flex; justify-content: space-between; font-family: "JetBrains Mono", monospace;
+          font-weight: 700; font-size: 24px; letter-spacing: 0.1em; margin-bottom: 14px;
+        }
+        #b17 .bar { height: 44px; border-radius: 22px; background: #f1ece2; overflow: hidden; }
+        #b17 .fill { width: 100%; height: 100%; border-radius: 22px; transform-origin: left center; }
+        #b17 .plate {
+          width: 210px; height: 210px; border-radius: 40px; background: #f2b84b; box-shadow: 0 12px 0 #c98a12;
+          display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 120px;
+        }
+        #b17 .of { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.14em; color: #3f6b3c; }
+        #b17 .big { font-weight: 900; font-size: 140px; line-height: 1; letter-spacing: -0.03em; white-space: nowrap; }
+        #b17 .label { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.1em; text-transform: uppercase; color: #3f6b3c; }
+        #b17 .rows { width: 100%; display: flex; flex-direction: column; gap: 34px; }
+        #b17 .row { display: flex; align-items: center; gap: 26px; text-align: left; font-weight: 800; font-size: 40px; line-height: 1.15; }
+        #b17 .row.tile { font-weight: 900; font-size: 42px; white-space: nowrap; }
+        #b17 .iconwrap { position: relative; flex: none; }
+        #b17 .num {
+          position: absolute; left: -10px; top: -10px; width: 52px; height: 52px; border-radius: 26px;
+          background: #16140f; color: #ffffff; display: flex; align-items: center; justify-content: center;
+          font-weight: 900; font-size: 28px;
+        }
+        #b17 .chart { position: relative; width: 100%; height: 620px; display: flex; align-items: flex-end; justify-content: center; gap: 70px; }
+        #b17 .col { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+        #b17 .barv { width: 150px; height: 460px; border-radius: 22px 22px 8px 8px; transform-origin: center bottom; }
+        #b17 .cl { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.08em; }
+        #b17 .x2 {
+          position: absolute; right: 0; top: 0; width: 160px; height: 160px; border-radius: 80px; background: #f2b84b;
+          box-shadow: 0 10px 0 #c98a12; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 68px;
+        }
+        #b17 .receipt { width: 100%; display: flex; flex-direction: column; gap: 16px; }
+        #b17 .line {
+          display: flex; align-items: center; gap: 18px; font-family: "JetBrains Mono", monospace; font-weight: 700;
+          font-size: 30px; padding-bottom: 14px; border-bottom: 3px dashed #e6dfd1; text-align: left;
+        }
+        #b17 .line .l { flex: 1; }
+        #b17 .total { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px; }
+        #b17 .totalv { font-weight: 900; font-size: 92px; color: #c0352c; white-space: nowrap; }
+        #b17 .reaction { position: absolute; right: -10px; bottom: 120px; }
+        #b17 .buy {
+          align-self: stretch; font-weight: 900; font-size: 54px; letter-spacing: 0.04em; padding: 30px 0;
+          border-radius: 26px; background: #f2b84b; box-shadow: 0 12px 0 #c98a12;
+        }
+        #b17 .cta {
+          display: flex; align-items: center; gap: 16px; padding: 18px 28px; border-radius: 44px;
+          background: #16140f; color: #ffffff; font-weight: 900; font-size: 30px; white-space: nowrap;
+        }
+      </style>
+      <div id="b17" data-composition-id="b17" data-width="1080" data-height="1920">
+        <div class="beat" id="b17-beat">
+          <img class="ic" src="assets/icons/light_bulb.png" alt="" style="width:150px;height:150px" />
+          <div class="plate">04</div>
+          <div class="of">CHAPITRE 4 SUR 4</div>
+          <div class="title">LA SOLUTION</div>
+          <div class="sub hid" id="b17-e1">Reprendre le contrôle</div>
+        </div>
+      </div>
+      <script>
+        (() => {
+          const tl = gsap.timeline({ paused: true });
+          const pop = (s, t) =>
+            tl.fromTo(s, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.32, ease: "back.out(2.2)" }, t);
+          const stamp = (s, t, r) =>
+            tl.fromTo(s, { opacity: 0, scale: 1.8, rotation: r }, { opacity: 1, scale: 1, rotation: r, duration: 0.26, ease: "power3.in" }, t);
+          const fr = (v, d) => {
+            const p = Math.abs(v).toFixed(d).split(".");
+            p[0] = p[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            return (v < 0 ? "-" : "") + p.join(",");
+          };
+          const count = (sel, from, to, t, dur, d, suffix) => {
+            const el = document.querySelector(sel);
+            const o = { v: from };
+            tl.fromTo(o, { v: from }, { v: to, duration: dur, ease: "power2.out", immediateRender: false,
+              onUpdate: () => { el.textContent = fr(o.v, d) + suffix; } }, t);
+          };
+          pop("#b17-e1", 0.96);
+          tl.fromTo("#b17-beat .plate", { rotation: -12, scale: 0.4 }, { rotation: 0, scale: 1, duration: 0.5, ease: "back.out(2)" }, 0.05);
+          tl.fromTo("#b17-beat", { opacity: 0, scale: 0.9, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "back.out(1.7)" }, 0);
+          tl.fromTo("#b17-beat", { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.92, duration: 0.15, ease: "power2.in", immediateRender: false }, 1.95);
+          window.__timelines["b17"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

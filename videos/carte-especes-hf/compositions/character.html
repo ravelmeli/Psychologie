@@ -13,36 +13,35 @@
           color: #16140f;
         }
         #character .floor-shadow {
-          position: absolute; left: -2px; top: 1440px; width: 460px; height: 60px;
+          position: absolute; left: 20px; top: 1416px; width: 340px; height: 48px;
           border-radius: 50%; background: radial-gradient(ellipse at center, rgba(40, 28, 14, 0.28), transparent 70%);
         }
-        #character .rig, #character .inner { position: absolute; inset: 0; transform-origin: 228px 1470px; }
+        #character .rig, #character .inner { position: absolute; inset: 0; transform-origin: 190px 1440px; }
         #character .pose { position: absolute; opacity: 0; }
       </style>
       <div id="character" data-composition-id="character" data-width="1080" data-height="1920">
         <div class="floor-shadow"></div>
         <div class="rig" id="character-rig">
           <div class="inner" id="character-inner">
-            <img id="character-02_explique" class="pose" src="assets/poses/02_explique.png" alt="" style="left:-67.5px;top:366.4px;width:637.2px;height:1141.0px" />
-            <img id="character-03_designe_droite" class="pose" src="assets/poses/03_designe_droite.png" alt="" style="left:-65.1px;top:364.3px;width:637.2px;height:1141.0px" />
-            <img id="character-04_reflechit" class="pose" src="assets/poses/04_reflechit.png" alt="" style="left:-122.5px;top:371.1px;width:637.2px;height:1141.0px" />
-            <img id="character-05_tente_achat" class="pose" src="assets/poses/05_tente_achat.png" alt="" style="left:-118.1px;top:360.9px;width:637.2px;height:1141.0px" />
-            <img id="character-06_inquiet" class="pose" src="assets/poses/06_inquiet.png" alt="" style="left:-109.6px;top:365.7px;width:637.8px;height:1140.4px" />
-            <img id="character-07_surpris" class="pose" src="assets/poses/07_surpris.png" alt="" style="left:-113.4px;top:378.6px;width:637.2px;height:1141.0px" />
-            <img id="character-08_rassure" class="pose" src="assets/poses/08_rassure.png" alt="" style="left:-109.3px;top:363.0px;width:637.2px;height:1141.0px" />
-            <img id="character-10_rit_content" class="pose" src="assets/poses/10_rit_content.png" alt="" style="left:-102.8px;top:367.7px;width:637.8px;height:1140.4px" />
-            <img id="character-11_triste_decu" class="pose" src="assets/poses/11_triste_decu.png" alt="" style="left:-107.9px;top:368.4px;width:637.2px;height:1141.0px" />
-            <img id="character-12_tient_telephone" class="pose" src="assets/poses/12_tient_telephone.png" alt="" style="left:-117.4px;top:374.5px;width:637.2px;height:1141.0px" />
-            <img id="character-13_compte_doigts" class="pose" src="assets/poses/13_compte_doigts.png" alt="" style="left:-113.7px;top:373.2px;width:637.2px;height:1141.0px" />
-            <img id="character-14_enerve" class="pose" src="assets/poses/14_enerve.png" alt="" style="left:-112.3px;top:371.1px;width:637.2px;height:1141.0px" />
+            <img id="character-02_explique" class="pose" src="assets/poses/02_explique.png" alt="" style="left:-27.2px;top:628.5px;width:468.5px;height:839.0px" />
+            <img id="character-03_designe_droite" class="pose" src="assets/poses/03_designe_droite.png" alt="" style="left:-25.5px;top:627.0px;width:468.5px;height:839.0px" />
+            <img id="character-04_reflechit" class="pose" src="assets/poses/04_reflechit.png" alt="" style="left:-67.8px;top:632.0px;width:468.5px;height:839.0px" />
+            <img id="character-05_tente_achat" class="pose" src="assets/poses/05_tente_achat.png" alt="" style="left:-64.5px;top:624.5px;width:468.5px;height:839.0px" />
+            <img id="character-06_inquiet" class="pose" src="assets/poses/06_inquiet.png" alt="" style="left:-58.2px;top:628.0px;width:469.0px;height:838.5px" />
+            <img id="character-07_surpris" class="pose" src="assets/poses/07_surpris.png" alt="" style="left:-61.0px;top:637.5px;width:468.5px;height:839.0px" />
+            <img id="character-08_rassure" class="pose" src="assets/poses/08_rassure.png" alt="" style="left:-58.0px;top:626.0px;width:468.5px;height:839.0px" />
+            <img id="character-10_rit_content" class="pose" src="assets/poses/10_rit_content.png" alt="" style="left:-53.2px;top:629.5px;width:469.0px;height:838.5px" />
+            <img id="character-11_triste_decu" class="pose" src="assets/poses/11_triste_decu.png" alt="" style="left:-57.0px;top:630.0px;width:468.5px;height:839.0px" />
+            <img id="character-12_tient_telephone" class="pose" src="assets/poses/12_tient_telephone.png" alt="" style="left:-64.0px;top:634.5px;width:468.5px;height:839.0px" />
+            <img id="character-13_compte_doigts" class="pose" src="assets/poses/13_compte_doigts.png" alt="" style="left:-61.2px;top:633.5px;width:468.5px;height:839.0px" />
+            <img id="character-14_enerve" class="pose" src="assets/poses/14_enerve.png" alt="" style="left:-60.2px;top:632.0px;width:468.5px;height:839.0px" />
           </div>
         </div>
       </div>
       <script>
         (() => {
           const tl = gsap.timeline({ paused: true });
-          const POSES = [[0.0, "04_reflechit"], [3.08, "06_inquiet"], [4.88, "03_designe_droite"], [7.14, "02_explique"], [11.14, "03_designe_droite"], [14.04, "06_inquiet"], [16.56, "12_tient_telephone"], [19.4, "08_rassure"], [22.14, "02_explique"], [26.5, "07_surpris"], [29.74, "13_compte_doigts"], [33.7, "02_explique"], [37.44, "03_designe_droite"], [39.34, "05_tente_achat"], [42.5, "14_enerve"], [45.72, "06_inquiet"], [48.24, "11_triste_decu"], [50.98, "02_explique"], [53.08, "03_designe_droite"], [56.54, "08_rassure"], [57.96, "03_designe_droite"], [59.5, "04_reflechit"], [61.2, "10_rit_content"]];
-          const DUR = 62.4;
+          const POSES = [[0.0, "04_reflechit"], [2.22, "05_tente_achat"], [3.08, "06_inquiet"], [4.88, "03_designe_droite"], [6.14, "08_rassure"], [7.14, "02_explique"], [11.14, "03_designe_droite"], [14.04, "06_inquiet"], [16.56, "12_tient_telephone"], [19.4, "13_compte_doigts"], [21.06, "08_rassure"], [22.14, "02_explique"], [24.84, "04_reflechit"], [26.5, "07_surpris"], [29.74, "03_designe_droite"], [32.92, "06_inquiet"], [33.7, "02_explique"], [35.94, "04_reflechit"], [37.44, "03_designe_droite"], [39.34, "05_tente_achat"], [42.5, "14_enerve"], [45.72, "06_inquiet"], [48.24, "11_triste_decu"], [50.98, "02_explique"], [53.08, "13_compte_doigts"], [56.54, "08_rassure"], [57.96, "03_designe_droite"], [59.5, "04_reflechit"], [61.2, "10_rit_content"]];
           POSES.forEach(([t, name], i) => {
             const el = "#character-" + name;
             const next = POSES[i + 1];

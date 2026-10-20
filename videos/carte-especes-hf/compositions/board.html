@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #board {
+          position: absolute;
+          inset: 0;
+          font-family: Montserrat, sans-serif;
+          color: #16140f;
+        }
+        #board .panel {
+          position: absolute; left: 392px; top: 330px; width: 580px; height: 980px;
+          background: #ffffff; border-radius: 44px; box-shadow: 0 30px 70px rgba(40, 35, 20, 0.2);
+          border: 3px solid #ece6d8; overflow: hidden;
+        }
+        #board .head {
+          height: 104px; background: #1f3a2c; display: flex; align-items: center; gap: 16px; padding: 0 28px;
+          color: #ffffff;
+        }
+        #board .head .ic { width: 60px; height: 60px; }
+        #board .acct { flex: 1; font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 22px; letter-spacing: 0.12em; }
+        #board .bal { display: flex; flex-direction: column; align-items: flex-end; }
+        #board .bal small { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 16px; letter-spacing: 0.12em; color: #b9d3b3; }
+        #board .amt { font-weight: 900; font-size: 34px; white-space: nowrap; }
+      </style>
+      <div id="board" data-composition-id="board" data-width="1080" data-height="1920">
+        <div class="panel"><div class="head"><img class="ic" src="assets/icons/bank.png" alt="" /><span class="acct">MON COMPTE</span><span class="bal"><small>SOLDE</small><span class="amt" id="board-amt">1 240,00 €</span></span></div></div>
+      </div>
+      <script>
+        (() => {
+          const tl = gsap.timeline({ paused: true });
+          const pop = (s, t) =>
+            tl.fromTo(s, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.32, ease: "back.out(2.2)" }, t);
+          const stamp = (s, t, r) =>
+            tl.fromTo(s, { opacity: 0, scale: 1.8, rotation: r }, { opacity: 1, scale: 1, rotation: r, duration: 0.26, ease: "power3.in" }, t);
+          const fr = (v, d) => {
+            const p = Math.abs(v).toFixed(d).split(".");
+            p[0] = p[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            return (v < 0 ? "-" : "") + p.join(",");
+          };
+          const count = (sel, from, to, t, dur, d, suffix) => {
+            const el = document.querySelector(sel);
+            const o = { v: from };
+            tl.fromTo(o, { v: from }, { v: to, duration: dur, ease: "power2.out", immediateRender: false,
+              onUpdate: () => { el.textContent = fr(o.v, d) + suffix; } }, t);
+          };
+          count("#board-amt", 1240, 1220, 13.4, 0.9, 2, " €");
+          tl.fromTo("#board-amt", { color: "#ff8a80" }, { color: "#ffffff", duration: 1.2, immediateRender: false }, 13.4);
+          count("#board-amt", 1220, 880, 48.4, 0.9, 2, " €");
+          tl.fromTo("#board-amt", { color: "#ff8a80" }, { color: "#ffffff", duration: 1.2, immediateRender: false }, 48.4);
+          window.__timelines["board"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

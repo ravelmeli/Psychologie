@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #b01 {
+          position: absolute;
+          inset: 0;
+          font-family: Montserrat, sans-serif;
+          color: #16140f;
+        }
+        #b01 .beat {
+          position: absolute; left: 428px; top: 460px; width: 508px; height: 820px;
+          display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px;
+          text-align: center;
+        }
+        #b01 .hid { opacity: 0; }
+        #b01 .ic { display: block; filter: drop-shadow(0 14px 18px rgba(40, 30, 10, 0.22)); }
+        #b01 .icons { display: flex; align-items: center; justify-content: center; gap: 22px; }
+        #b01 .sep { font-weight: 900; font-size: 64px; color: #a86f0c; }
+        #b01 .title { font-weight: 900; font-size: 66px; line-height: 1.04; letter-spacing: -0.02em; }
+        #b01 .sub { display: flex; align-items: center; gap: 14px; font-weight: 700; font-size: 38px; line-height: 1.2; color: #3a362e; }
+        #b01 .badge {
+          position: absolute; right: -6px; top: 0; display: flex; flex-direction: column; align-items: center; gap: 6px;
+          font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 30px; color: #c0352c;
+        }
+        #b01 .stamp {
+          font-weight: 900; font-size: 40px; letter-spacing: 0.02em; padding: 16px 24px;
+          border: 7px solid #d9453b; color: #c0352c; border-radius: 16px; background: #ffffff;
+        }
+        #b01 .stamp.yellow { border-color: #c98a12; color: #16140f; background: #f2b84b; }
+        #b01 .meter { width: 100%; }
+        #b01 .meter-top {
+          display: flex; justify-content: space-between; font-family: "JetBrains Mono", monospace;
+          font-weight: 700; font-size: 24px; letter-spacing: 0.1em; margin-bottom: 14px;
+        }
+        #b01 .bar { height: 44px; border-radius: 22px; background: #f1ece2; overflow: hidden; }
+        #b01 .fill { width: 100%; height: 100%; border-radius: 22px; transform-origin: left center; }
+        #b01 .plate {
+          width: 210px; height: 210px; border-radius: 40px; background: #f2b84b; box-shadow: 0 12px 0 #c98a12;
+          display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 120px;
+        }
+        #b01 .of { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.14em; color: #3f6b3c; }
+        #b01 .big { font-weight: 900; font-size: 140px; line-height: 1; letter-spacing: -0.03em; white-space: nowrap; }
+        #b01 .label { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.1em; text-transform: uppercase; color: #3f6b3c; }
+        #b01 .rows { width: 100%; display: flex; flex-direction: column; gap: 34px; }
+        #b01 .row { display: flex; align-items: center; gap: 26px; text-align: left; font-weight: 800; font-size: 40px; line-height: 1.15; }
+        #b01 .row.tile { font-weight: 900; font-size: 42px; white-space: nowrap; }
+        #b01 .iconwrap { position: relative; flex: none; }
+        #b01 .num {
+          position: absolute; left: -10px; top: -10px; width: 52px; height: 52px; border-radius: 26px;
+          background: #16140f; color: #ffffff; display: flex; align-items: center; justify-content: center;
+          font-weight: 900; font-size: 28px;
+        }
+        #b01 .chart { position: relative; width: 100%; height: 620px; display: flex; align-items: flex-end; justify-content: center; gap: 70px; }
+        #b01 .col { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+        #b01 .barv { width: 150px; height: 460px; border-radius: 22px 22px 8px 8px; transform-origin: center bottom; }
+        #b01 .cl { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.08em; }
+        #b01 .x2 {
+          position: absolute; right: 0; top: 0; width: 160px; height: 160px; border-radius: 80px; background: #f2b84b;
+          box-shadow: 0 10px 0 #c98a12; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 68px;
+        }
+        #b01 .receipt { width: 100%; display: flex; flex-direction: column; gap: 16px; }
+        #b01 .line {
+          display: flex; align-items: center; gap: 18px; font-family: "JetBrains Mono", monospace; font-weight: 700;
+          font-size: 30px; padding-bottom: 14px; border-bottom: 3px dashed #e6dfd1; text-align: left;
+        }
+        #b01 .line .l { flex: 1; }
+        #b01 .total { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px; }
+        #b01 .totalv { font-weight: 900; font-size: 92px; color: #c0352c; white-space: nowrap; }
+        #b01 .reaction { position: absolute; right: -10px; bottom: 120px; }
+        #b01 .buy {
+          align-self: stretch; font-weight: 900; font-size: 54px; letter-spacing: 0.04em; padding: 30px 0;
+          border-radius: 26px; background: #f2b84b; box-shadow: 0 12px 0 #c98a12;
+        }
+        #b01 .cta {
+          display: flex; align-items: center; gap: 16px; padding: 18px 28px; border-radius: 44px;
+          background: #16140f; color: #ffffff; font-weight: 900; font-size: 30px; white-space: nowrap;
+        }
+      </style>
+      <div id="b01" data-composition-id="b01" data-width="1080" data-height="1920">
+        <div class="beat" id="b01-beat">
+          <div class="icons"><span class="" id="b01-e1"><img class="ic" src="assets/icons/euro_banknote.png" alt="" style="width:190px;height:190px" /></span><span class="sep hid" id="b01-e2">→</span><span class="hid" id="b01-e3"><img class="ic" src="assets/icons/hot_beverage.png" alt="" style="width:190px;height:190px" /></span></div>
+          <div class="title" id="b01-e4">POURQUOI ?</div>
+          <div class="sub hid" id="b01-e5">20 € pour un café</div>
+          <div class="badge hid" id="b01-e6"><img class="ic" src="assets/icons/anguished_face.png" alt="" style="width:130px;height:130px" /><span>AÏE !</span></div>
+        </div>
+      </div>
+      <script>
+        (() => {
+          const tl = gsap.timeline({ paused: true });
+          const pop = (s, t) =>
+            tl.fromTo(s, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.32, ease: "back.out(2.2)" }, t);
+          const stamp = (s, t, r) =>
+            tl.fromTo(s, { opacity: 0, scale: 1.8, rotation: r }, { opacity: 1, scale: 1, rotation: r, duration: 0.26, ease: "power3.in" }, t);
+          const fr = (v, d) => {
+            const p = Math.abs(v).toFixed(d).split(".");
+            p[0] = p[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+            return (v < 0 ? "-" : "") + p.join(",");
+          };
+          const count = (sel, from, to, t, dur, d, suffix) => {
+            const el = document.querySelector(sel);
+            const o = { v: from };
+            tl.fromTo(o, { v: from }, { v: to, duration: dur, ease: "power2.out", immediateRender: false,
+              onUpdate: () => { el.textContent = fr(o.v, d) + suffix; } }, t);
+          };
+          pop("#b01-e2", 2.22);
+          pop("#b01-e3", 2.22);
+          pop("#b01-e5", 1.44);
+          pop("#b01-e6", 3.08);
+          tl.fromTo("#b01-beat", { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.92, duration: 0.15, ease: "power2.in", immediateRender: false }, 4.73);
+          window.__timelines["b01"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

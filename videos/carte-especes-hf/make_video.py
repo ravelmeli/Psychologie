@@ -72,6 +72,10 @@ def main():
     if not args.skip_transcribe:
         transcribe(plan)
     run([sys.executable, "-I", "build.py"])
+    if (ROOT / plan.get("music", {}).get("src", "-")).exists():
+        # Creuse la musique sous la voix (dips de fréquence + niveau), voir /hyperframes-audio
+        run(["node", str(ROOT.parent.parent / ".claude/skills/hyperframes-audio/scripts/carve.mjs"),
+             "--comp", "index.html", "--bed", "music", "--voice", "voice"])
     run(HF + ["check"])
     if not args.no_render:
         run(HF + ["render", "-o", args.output, "-q", "delivery"])

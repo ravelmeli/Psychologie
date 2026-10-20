@@ -100,8 +100,8 @@ CARD_CSS = """        #%ID% .card {
         #%ID% .chips.col { flex-direction: column; }
         #%ID% .pill {
           align-self: flex-start; font-family: "JetBrains Mono", monospace; font-weight: 700;
-          font-size: 26px; letter-spacing: 0.06em; padding: 14px 22px; border-radius: 30px;
-          background: #f4f1ea; color: #16140f;
+          font-size: 24px; letter-spacing: 0.04em; padding: 14px 20px; border-radius: 30px;
+          background: #f4f1ea; color: #16140f; white-space: nowrap;
         }
         #%ID% .pill.red { background: #d9453b; color: #ffffff; }
         #%ID% .pill.green { background: #3f6b3c; color: #ffffff; }
@@ -156,7 +156,7 @@ CARD_CSS = """        #%ID% .card {
           display: flex; justify-content: space-between; font-family: "JetBrains Mono", monospace;
           font-weight: 700; font-size: 28px; padding-bottom: 14px; border-bottom: 2px dashed #ece6d8;
         }
-        #%ID% .total { display: flex; justify-content: space-between; font-weight: 900; font-size: 50px; color: #c0352c; }
+        #%ID% .total { display: flex; justify-content: space-between; gap: 16px; font-weight: 900; font-size: 42px; color: #c0352c; white-space: nowrap; }
         #%ID% .sub { font-weight: 700; font-size: 38px; line-height: 1.2; }
         #%ID% .cta {
           display: flex; align-items: center; gap: 14px; padding: 16px 22px; border-radius: 40px;

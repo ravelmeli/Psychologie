@@ -35,7 +35,7 @@ CONTENT = {
     "h": BOARD["h"] - HEAD_H - 26 - 30,
 }
 
-LOCALE = {"lang": "fr", "dec": ",", "thou": " ", "pct": " %", "cur_prefix": "", "cur_suffix": " €"}
+LOCALE = {}
 COLORS = {"red": "#d9453b", "green": "#3f8f4a", "dark": "#3f6b3c", "light": "#8db580", "yellow": "#f2b84b"}
 
 SUB = """<!doctype html>
@@ -107,11 +107,23 @@ def helpers():
     return JS_HELPERS.replace("%THOU%", LOCALE["thou"]).replace("%DEC%", LOCALE["dec"])
 
 
+# Réglages par langue. Convention de la chaîne : l'anglais utilise les dollars ($),
+# le français les euros (€). Un plan peut les surcharger avec "locale" / "currency".
+PRESETS = {
+    "fr": {"lang": "fr", "dec": ",", "thou": " ", "pct": " %", "cur_prefix": "", "cur_suffix": " €", "money_icon": "euro_banknote"},
+    "en": {"lang": "en", "dec": ".", "thou": ",", "pct": "%", "cur_prefix": "$", "cur_suffix": "", "money_icon": "dollar_banknote"},
+}
+
+
 def setup_locale(plan):
-    cur = plan.get("currency", {})
+    lang = plan.get("locale", {}).get("lang", "fr")
+    LOCALE.update(PRESETS.get(lang, PRESETS["fr"]))
     LOCALE.update(plan.get("locale", {}))
+    cur = plan.get("currency", {})
     LOCALE["cur_prefix"] = cur.get("prefix", LOCALE["cur_prefix"])
     LOCALE["cur_suffix"] = cur.get("suffix", LOCALE["cur_suffix"])
+    if "money_icon" in cur:
+        LOCALE["money_icon"] = cur["money_icon"]
 
 
 def norm(x):
@@ -119,6 +131,8 @@ def norm(x):
 
 
 def icon(name, size, extra=""):
+    if name == "money_note":  # billet de la devise de la langue (euro_banknote / dollar_banknote)
+        name = LOCALE["money_icon"]
     if not (ROOT / "assets/icons" / f"{name}.png").exists():
         raise FileNotFoundError(f"icône manquante : assets/icons/{name}.png")
     return f'<img class="ic"{extra} src="assets/icons/{name}.png" alt="" style="width:{size}px;height:{size}px" />'

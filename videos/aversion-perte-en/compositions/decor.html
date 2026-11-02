@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #decor {
+          position: absolute;
+          inset: 0;
+          font-family: Montserrat, sans-serif;
+          color: #16140f;
+        }
+        #decor .wall {
+          position: absolute; inset: 0;
+          background:
+            radial-gradient(ellipse 60% 35% at 22% 18%, rgba(255, 244, 214, 0.9), transparent 70%),
+            linear-gradient(180deg, #f6f1e7 0%, #efe7d8 100%);
+        }
+        #decor .light {
+          position: absolute; left: -120px; top: -200px; width: 520px; height: 1700px;
+          background: linear-gradient(180deg, rgba(255, 250, 235, 0.55), rgba(255, 250, 235, 0));
+          transform: rotate(-24deg); transform-origin: top left;
+        }
+        #decor .panel {
+          position: absolute; left: 0; right: 0; top: 1190px; height: 240px;
+          background:
+            repeating-linear-gradient(90deg, transparent 0 176px, rgba(120, 100, 70, 0.12) 176px 180px),
+            linear-gradient(180deg, #e9e0cf, #e2d7c3);
+          border-top: 6px solid #d9ccb5;
+        }
+        #decor .base { position: absolute; left: 0; right: 0; top: 1430px; height: 22px; background: #cdbd9f; }
+        #decor .floor {
+          position: absolute; left: 0; right: 0; top: 1452px; bottom: 0;
+          background:
+            repeating-linear-gradient(0deg, rgba(110, 75, 40, 0.10) 0 3px, transparent 3px 84px),
+            linear-gradient(180deg, #e8d6b8, #efe2ca);
+        }
+        #decor .plant { position: absolute; left: 24px; top: 1246px; width: 120px; height: 190px; }
+        #decor .pot { position: absolute; left: 22px; bottom: 0; width: 76px; height: 70px; background: #c97b4a; border-radius: 6px 6px 18px 18px; }
+        #decor .leaf { position: absolute; width: 46px; height: 100px; border-radius: 50%; background: #6f9a62; transform-origin: bottom center; }
+        #decor .float { position: absolute; opacity: 0.38; }
+        #decor .vignette {
+          position: absolute; inset: 0;
+          background: radial-gradient(ellipse 85% 75% at 50% 45%, transparent 60%, rgba(60, 45, 25, 0.16) 100%);
+        }
+      </style>
+      <div id="decor" data-composition-id="decor" data-width="1080" data-height="1920">
+        <div class="wall"></div>
+        <div class="light"></div>
+        <div class="panel"></div>
+        <div class="plant"><div class="leaf" style="left:10px;top:30px;transform:rotate(-35deg)"></div><div class="leaf" style="left:38px;top:0px;transform:rotate(-8deg)"></div><div class="leaf" style="left:64px;top:22px;transform:rotate(24deg)"></div><div class="leaf" style="left:36px;top:40px;transform:rotate(6deg)"></div><div class="pot"></div></div>
+        <div class="base"></div>
+        <div class="floor"></div>
+        <img class="float" id="decor-f0" src="assets/icons/coin.png" alt="" style="left:14px;top:460px;width:80px;height:80px" /><img class="float" id="decor-f1" src="assets/icons/money_with_wings.png" alt="" style="left:250px;top:480px;width:64px;height:64px" /><img class="float" id="decor-f2" src="assets/icons/chart_decreasing.png" alt="" style="left:120px;top:610px;width:72px;height:72px" /><img class="float" id="decor-f3" src="assets/icons/money_bag.png" alt="" style="left:300px;top:650px;width:56px;height:56px" /><img class="float" id="decor-f4" src="assets/icons/receipt.png" alt="" style="left:995px;top:540px;width:62px;height:62px" /><img class="float" id="decor-f5" src="assets/icons/purse.png" alt="" style="left:990px;top:920px;width:70px;height:70px" /><img class="float" id="decor-f6" src="assets/icons/dollar_banknote.png" alt="" style="left:60px;top:1620px;width:66px;height:66px" /><img class="float" id="decor-f7" src="assets/icons/shopping_bags.png" alt="" style="left:960px;top:1650px;width:74px;height:74px" />
+        <div class="vignette"></div>
+      </div>
+      <script>
+        (() => {
+          const tl = gsap.timeline({ paused: true });
+          tl.fromTo("#decor-f0", { y: 0 }, { y: -120, duration: 88.8, ease: "none" }, 0);
+          tl.fromTo("#decor-f0", { rotation: 8 }, { rotation: -8, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 36 }, 0);
+          tl.fromTo("#decor-f1", { y: 0 }, { y: -145, duration: 88.8, ease: "none" }, 0);
+          tl.fromTo("#decor-f1", { rotation: -8 }, { rotation: 8, duration: 2.6999999999999997, ease: "sine.inOut", yoyo: true, repeat: 31 }, 0);
+          tl.fromTo("#decor-f2", { y: 0 }, { y: -170, duration: 88.8, ease: "none" }, 0);
+          tl.fromTo("#decor-f2", { rotation: 8 }, { rotation: -8, duration: 3.0, ease: "sine.inOut", yoyo: true, repeat: 28 }, 0);
+          tl.fromTo("#decor-f3", { y: 0 }, { y: -120, duration: 88.8, ease: "none" }, 0);
+          tl.fromTo("#decor-f3", { rotation: -8 }, { rotation: 8, duration: 3.3, ease: "sine.inOut", yoyo: true, repeat: 25 }, 0);
+          tl.fromTo("#decor-f4", { y: 0 }, { y: -145, duration: 88.8, ease: "none" }, 0);
+          tl.fromTo("#decor-f4", { rotation: 8 }, { rotation: -8, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 36 }, 0);
+          tl.fromTo("#decor-f5", { y: 0 }, { y: -170, duration: 88.8, ease: "none" }, 0);
+          tl.fromTo("#decor-f5", { rotation: -8 }, { rotation: 8, duration: 2.6999999999999997, ease: "sine.inOut", yoyo: true, repeat: 31 }, 0);
+          tl.fromTo("#decor-f6", { y: 0 }, { y: -120, duration: 88.8, ease: "none" }, 0);
+          tl.fromTo("#decor-f6", { rotation: 8 }, { rotation: -8, duration: 3.0, ease: "sine.inOut", yoyo: true, repeat: 28 }, 0);
+          tl.fromTo("#decor-f7", { y: 0 }, { y: -145, duration: 88.8, ease: "none" }, 0);
+          tl.fromTo("#decor-f7", { rotation: -8 }, { rotation: 8, duration: 3.3, ease: "sine.inOut", yoyo: true, repeat: 25 }, 0);
+          window.__timelines["decor"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

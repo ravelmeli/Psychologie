@@ -35,10 +35,11 @@ CONTENT = {
     "h": BOARD["h"] - HEAD_H - 26 - 30,
 }
 
+LOCALE = {"lang": "fr", "dec": ",", "thou": " ", "pct": " %", "cur_prefix": "", "cur_suffix": " €"}
 COLORS = {"red": "#d9453b", "green": "#3f8f4a", "dark": "#3f6b3c", "light": "#8db580", "yellow": "#f2b84b"}
 
 SUB = """<!doctype html>
-<html lang="fr">
+<html lang="%LANG%">
   <head>
     <meta charset="UTF-8" />
   </head>
@@ -72,16 +73,16 @@ JS_HELPERS = """          const pop = (s, t) =>
             tl.fromTo(s, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.32, ease: "back.out(2.2)" }, t);
           const stamp = (s, t, r) =>
             tl.fromTo(s, { opacity: 0, scale: 1.8, rotation: r }, { opacity: 1, scale: 1, rotation: r, duration: 0.26, ease: "power3.in" }, t);
-          const fr = (v, d) => {
+          const fr = (v, d, pre, suf) => {
             const p = Math.abs(v).toFixed(d).split(".");
-            p[0] = p[0].replace(/\\B(?=(\\d{3})+(?!\\d))/g, " ");
-            return (v < 0 ? "-" : "") + p.join(",");
+            p[0] = p[0].replace(/\\B(?=(\\d{3})+(?!\\d))/g, "%THOU%");
+            return (v < 0 ? "-" : "") + pre + p.join("%DEC%") + suf;
           };
-          const count = (sel, from, to, t, dur, d, suffix) => {
+          const count = (sel, from, to, t, dur, d, pre, suf) => {
             const el = document.querySelector(sel);
             const o = { v: from };
             tl.fromTo(o, { v: from }, { v: to, duration: dur, ease: "power2.out", immediateRender: false,
-              onUpdate: () => { el.textContent = fr(o.v, d) + suffix; } }, t);
+              onUpdate: () => { el.textContent = fr(o.v, d, pre, suf); } }, t);
           };"""
 
 
@@ -93,10 +94,24 @@ def fmt(t):
     return f"{max(t, 0):.3f}".rstrip("0").rstrip(".") or "0"
 
 
-def fr(v, d):
+def fr(v, d, money=False):
     whole, _, dec = f"{abs(v):.{d}f}".partition(".")
-    whole = re.sub(r"\B(?=(\d{3})+(?!\d))", " ", whole)
-    return ("-" if v < 0 else "") + whole + ("," + dec if d else "")
+    whole = re.sub(r"\B(?=(\d{3})+(?!\d))", LOCALE["thou"], whole)
+    txt = whole + (LOCALE["dec"] + dec if d else "")
+    if money:
+        txt = LOCALE["cur_prefix"] + txt + LOCALE["cur_suffix"]
+    return ("-" if v < 0 else "") + txt
+
+
+def helpers():
+    return JS_HELPERS.replace("%THOU%", LOCALE["thou"]).replace("%DEC%", LOCALE["dec"])
+
+
+def setup_locale(plan):
+    cur = plan.get("currency", {})
+    LOCALE.update(plan.get("locale", {}))
+    LOCALE["cur_prefix"] = cur.get("prefix", LOCALE["cur_prefix"])
+    LOCALE["cur_suffix"] = cur.get("suffix", LOCALE["cur_suffix"])
 
 
 def norm(x):
@@ -110,7 +125,7 @@ def icon(name, size, extra=""):
 
 
 def sub(cid, css, markup, js):
-    return SUB.replace("%CSS%", css).replace("%HTML%", markup).replace("%JS%", js).replace("%ID%", cid)
+    return SUB.replace("%LANG%", LOCALE["lang"]).replace("%CSS%", css).replace("%HTML%", markup).replace("%JS%", js).replace("%ID%", cid)
 
 
 # ---------------------------------------------------------------- séquences
@@ -188,7 +203,7 @@ BEAT_CSS = """        #%ID% .beat {
 class Beat:
     def __init__(self, beat, end, last):
         self.b, self.start, self.end, self.last = beat, beat["start"], end, last
-        self.parts, self.js, self.n = [], [JS_HELPERS], 0
+        self.parts, self.js, self.n = [], [helpers()], 0
 
     def nid(self):
         self.n += 1
@@ -232,7 +247,7 @@ class Beat:
             f'{{ scaleX: {m["to"]}, backgroundColor: "{c_to}", duration: 0.9, ease: "power2.out" }}, {self.L(m["at"])});'
         )
         return (
-            f'<div class="meter"><div class="meter-top"><span>{esc(m["label"])}</span><span>{int(m["to"] * 100)} %</span></div>'
+            f'<div class="meter"><div class="meter-top"><span>{esc(m["label"])}</span><span>{int(m["to"] * 100)}{LOCALE["pct"]}</span></div>'
             f'<div class="bar"><div class="fill" id="{i}"></div></div></div>'
         )
 
@@ -293,9 +308,9 @@ class Beat:
             i = self.nid()
             P.append(icon(b["icon"], 220))
             P.append(f'<div class="label">{esc(b["label"])}</div>')
-            P.append(f'<div class="big" id="{i}">{fr(b["from"], 0)}{esc(b["suffix"])}</div>')
+            P.append(f'<div class="big" id="{i}">{LOCALE["cur_prefix"]}{fr(b["from"], 0)}{LOCALE["cur_suffix"]}</div>')
             self.js.append(
-                f'          count("#{i}", {b["from"]}, {b["to"]}, {self.L(b["at"])}, {b["dur"]}, 0, {json.dumps(b["suffix"])});'
+                f'          count("#{i}", {b["from"]}, {b["to"]}, {self.L(b["at"])}, {b["dur"]}, 0, {json.dumps(LOCALE["cur_prefix"])}, {json.dumps(LOCALE["cur_suffix"])});'
             )
             if "sub" in b:
                 P.append(self.text("sub", b["sub"]))
@@ -348,10 +363,10 @@ class Beat:
             i, v = self.nid(), self.nid()
             lines.append(
                 f'<div class="total hid" id="{i}"><div class="label">{esc(tot["label"])}</div>'
-                f'<div class="totalv" id="{v}">0,00 €</div></div>'
+                f'<div class="totalv" id="{v}">{fr(0, 2, True)}</div></div>'
             )
             self.js.append(f'          stamp("#{i}", {self.L(tot["at"])}, 0);')
-            self.js.append(f'          count("#{v}", 0, {tot["to"]}, {self.L(tot["at"])}, {tot["dur"]}, 2, " €");')
+            self.js.append(f'          count("#{v}", 0, {tot["to"]}, {self.L(tot["at"])}, {tot["dur"]}, 2, {json.dumps(LOCALE["cur_prefix"])}, {json.dumps(LOCALE["cur_suffix"])});')
             P.append(f'<div class="receipt">{"".join(lines)}</div>')
             if "reaction" in b:
                 r = b["reaction"]
@@ -408,12 +423,12 @@ def render_board(plan):
     markup = (
         '        <div class="panel"><div class="head">'
         f'<img class="ic" src="assets/icons/bank.png" alt="" /><span class="acct">{esc(bd["title"])}</span>'
-        f'<span class="bal"><small>SOLDE</small><span class="amt" id="board-amt">{fr(first, 2)} €</span></span>'
+        f'<span class="bal"><small>{esc(bd.get("balance_label", "SOLDE"))}</small><span class="amt" id="board-amt">{fr(first, 2, True)}</span></span>'
         "</div></div>"
     )
-    js = [JS_HELPERS]
+    js = [helpers()]
     for prev, cur in zip(bd["balance"], bd["balance"][1:]):
-        js.append(f'          count("#board-amt", {prev["value"]}, {cur["value"]}, {fmt(cur["at"])}, 0.9, 2, " €");')
+        js.append(f'          count("#board-amt", {prev["value"]}, {cur["value"]}, {fmt(cur["at"])}, 0.9, 2, {json.dumps(LOCALE["cur_prefix"])}, {json.dumps(LOCALE["cur_suffix"])});')
         js.append(
             f'          tl.fromTo("#board-amt", {{ color: "#ff8a80" }}, {{ color: "#ffffff", duration: 1.2, immediateRender: false }}, {fmt(cur["at"])});'
         )
@@ -626,7 +641,7 @@ def render_captions(plan):
           display: flex; align-items: center; justify-content: center; text-align: center;
           font-weight: 800; font-size: 52px; line-height: 1.15; opacity: 0;
         }}
-        #captions .w {{ color: #8a8377; }}"""
+        #captions .w {{ color: #766f62; }}"""
     rows, data = [], []
     for i, c in enumerate(chunks):
         spans = " ".join(f'<span class="w" id="cap-{i}-{j}">{esc(w["w"])}</span>' for j, w in enumerate(c["words"]))
@@ -672,15 +687,19 @@ def sfx_tags(plan):
     cues.sort(key=lambda c: c["at"])
     out_dir = ROOT / "assets/sfx"
     out_dir.mkdir(parents=True, exist_ok=True)
-    tags = []
+    tags, track_end = [], {}
     for k, c in enumerate(cues):
         src = SFX_LIB / f"{c['file']}.mp3"
         dst = out_dir / src.name
         if not dst.exists():
             shutil.copy(src, dst)
+        length = sfx_duration(dst)
+        # première piste libre : deux sons qui se chevauchent ne partagent pas la même piste
+        track = next(t for t in range(11, 40) if track_end.get(t, -1) <= c["at"])
+        track_end[track] = c["at"] + length
         tags.append(
             f'      <audio id="sfx-{k}" src="assets/sfx/{src.name}" data-start="{fmt(c["at"])}" '
-            f'data-duration="{fmt(sfx_duration(dst))}" data-track-index="{11 + k % 2}" data-volume="{c["volume"]}"></audio>'
+            f'data-duration="{fmt(length)}" data-track-index="{track}" data-volume="{c["volume"]}"></audio>'
         )
     return "\n".join(tags), len(cues)
 
@@ -703,11 +722,11 @@ def render_root(plan, beat_spans, sfx):
     music = ""
     if m and (ROOT / m["src"]).exists():
         music = (
-            f'      <audio id="music" src="{m["src"]}" data-start="0" data-duration="{fmt(D)}" '
-            f'data-track-index="13" data-volume="{m["volume"]}"></audio>'
+            f'      <audio id="music" src="{m["src"]}" data-start="0" data-duration="{fmt(min(D, sfx_duration(ROOT / m["src"])))}" '
+            f'data-track-index="9" data-volume="{m["volume"]}"></audio>'
         )
     return f"""<!doctype html>
-<html lang="fr">
+<html lang="{LOCALE["lang"]}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width={W}, height={H}" />
@@ -752,6 +771,7 @@ def render_root(plan, beat_spans, sfx):
 
 def main():
     plan = json.loads((ROOT / "plan.json").read_text())
+    setup_locale(plan)
     comp = ROOT / "compositions"
     comp.mkdir(exist_ok=True)
     for old in comp.glob("*.html"):

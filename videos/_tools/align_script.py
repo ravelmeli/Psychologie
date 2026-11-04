@@ -24,13 +24,24 @@ def script_words(path):
     text = open(path, encoding="utf-8").read()
     parts = re.split(r"^---\s*$", text, flags=re.M)
     body = parts[1] if len(parts) > 2 else text
-    return [t for t in body.split() if norm(t)]
+    out = []
+    for t in body.split():
+        if norm(t):
+            out.append(t)
+        elif out:  # symbole isolé (« % », « € ») : on le garde collé au mot précédent
+            out[-1] += "\u00a0" + t
+    return out
 
 
 def main(script_md, whisper_json, out_json):
     sw = script_words(script_md)
     d = json.load(open(whisper_json))
-    ww = d["words"]
+    ww = []
+    for w in d["words"]:  # jeton de ponctuation seul (« ? ») : on le fond dans le mot précédent
+        if not norm(w["word"]) and ww:
+            ww[-1] = {**ww[-1], "end": w["end"]}
+        else:
+            ww.append(w)
     a = [norm(w) for w in sw]
     b = [norm(w["word"]) for w in ww]
     out = [None] * len(sw)

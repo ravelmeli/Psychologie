@@ -1,0 +1,822 @@
+{
+  "title": "The Test: $100 Today or $110 in a Month?",
+  "duration": 98.2,
+  "locale": {
+    "lang": "en"
+  },
+  "voice": {
+    "src": "assets/audio/voix.wav",
+    "duration": 96.84
+  },
+  "music": {
+    "src": "assets/audio/bgm.wav",
+    "volume": 0.35
+  },
+  "transcript": "transcript.json",
+  "fixes": {},
+  "header": {
+    "tag": "PSY · MONEY",
+    "title": "THE TEST"
+  },
+  "sections": [
+    [
+      0,
+      "INTRO"
+    ],
+    [
+      10.2,
+      "01 · THE RETURN"
+    ],
+    [
+      24.8,
+      "02 · THE REVERSAL"
+    ],
+    [
+      43.8,
+      "03 · PRESENT BIAS"
+    ],
+    [
+      70.4,
+      "04 · THE FIX"
+    ]
+  ],
+  "board": {
+    "title": "MY SAVINGS",
+    "balance_label": "BALANCE",
+    "balance": [
+      {
+        "at": 0,
+        "value": 1240
+      },
+      {
+        "at": 75.2,
+        "value": 1440
+      }
+    ]
+  },
+  "poses": [
+    [
+      0.0,
+      "02_explique"
+    ],
+    [
+      2.6,
+      "03_designe_droite"
+    ],
+    [
+      4.5,
+      "04_reflechit"
+    ],
+    [
+      10.2,
+      "02_explique"
+    ],
+    [
+      11.8,
+      "07_surpris"
+    ],
+    [
+      14.0,
+      "03_designe_droite"
+    ],
+    [
+      15.9,
+      "02_explique"
+    ],
+    [
+      16.4,
+      "07_surpris"
+    ],
+    [
+      18.7,
+      "02_explique"
+    ],
+    [
+      20.4,
+      "07_surpris"
+    ],
+    [
+      22.7,
+      "03_designe_droite"
+    ],
+    [
+      24.8,
+      "04_reflechit"
+    ],
+    [
+      26.0,
+      "03_designe_droite"
+    ],
+    [
+      30.7,
+      "04_reflechit"
+    ],
+    [
+      34.2,
+      "02_explique"
+    ],
+    [
+      36.8,
+      "03_designe_droite"
+    ],
+    [
+      41.2,
+      "06_inquiet"
+    ],
+    [
+      43.8,
+      "03_designe_droite"
+    ],
+    [
+      46.3,
+      "02_explique"
+    ],
+    [
+      48.3,
+      "04_reflechit"
+    ],
+    [
+      51.7,
+      "03_designe_droite"
+    ],
+    [
+      55.1,
+      "06_inquiet"
+    ],
+    [
+      57.3,
+      "11_triste_decu"
+    ],
+    [
+      59.5,
+      "05_tente_achat"
+    ],
+    [
+      61.7,
+      "06_inquiet"
+    ],
+    [
+      63.9,
+      "02_explique"
+    ],
+    [
+      67.4,
+      "04_reflechit"
+    ],
+    [
+      70.4,
+      "08_rassure"
+    ],
+    [
+      71.4,
+      "13_compte_doigts"
+    ],
+    [
+      72.6,
+      "03_designe_droite"
+    ],
+    [
+      76.9,
+      "02_explique"
+    ],
+    [
+      81.8,
+      "03_designe_droite"
+    ],
+    [
+      84.2,
+      "10_rit_content"
+    ],
+    [
+      86.4,
+      "08_rassure"
+    ],
+    [
+      89.2,
+      "04_reflechit"
+    ],
+    [
+      91.2,
+      "02_explique"
+    ],
+    [
+      94.1,
+      "03_designe_droite"
+    ],
+    [
+      96.0,
+      "10_rit_content"
+    ]
+  ],
+  "camera": [
+    {
+      "at": 20.4,
+      "until": 22.4,
+      "scale": 1.05
+    },
+    {
+      "at": 35.0,
+      "until": 37.0,
+      "scale": 1.05
+    },
+    {
+      "at": 67.6,
+      "until": 69.4,
+      "scale": 1.04
+    }
+  ],
+  "spotlight": [
+    {
+      "at": 20.5,
+      "until": 22.2
+    },
+    {
+      "at": 35.2,
+      "until": 36.8
+    }
+  ],
+  "ambient": [
+    "coin",
+    "money_with_wings",
+    "hourglass_done",
+    "money_bag",
+    "receipt",
+    "purse",
+    "dollar_banknote",
+    "chart_increasing"
+  ],
+  "beats": [
+    {
+      "id": "b01",
+      "start": 0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": "QUICK TEST",
+      "sub": {
+        "text": "Answer without thinking",
+        "at": 1.1
+      }
+    },
+    {
+      "id": "b02",
+      "start": 2.6,
+      "type": "versus",
+      "sep": "OR",
+      "items": [
+        {
+          "icon": "money_note",
+          "big": "$100",
+          "sub": "TODAY",
+          "at": 2.7
+        },
+        {
+          "icon": "money_with_wings",
+          "big": "$110",
+          "sub": "IN 1 MONTH",
+          "at": 4.6
+        }
+      ]
+    },
+    {
+      "id": "b03",
+      "start": 6.7,
+      "type": "countdown",
+      "label": "CHOOSE!",
+      "n": 3,
+      "step": 1.0,
+      "at": 6.8
+    },
+    {
+      "id": "b04",
+      "start": 10.2,
+      "type": "chapter",
+      "num": "01",
+      "of": "CHAPTER 1 OF 4",
+      "title": "THE RETURN",
+      "icon": "chart_increasing",
+      "sub": {
+        "text": "What comes next may surprise you",
+        "at": 10.6
+      }
+    },
+    {
+      "id": "b05",
+      "start": 14.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "hourglass_done"
+        }
+      ],
+      "title": {
+        "text": "+$10",
+        "at": 14.9
+      },
+      "sub": {
+        "text": "Wait 1 month",
+        "at": 14.2
+      }
+    },
+    {
+      "id": "b06",
+      "start": 15.9,
+      "type": "counter",
+      "icon": "chart_increasing",
+      "label": "Return in 1 month",
+      "from": 0,
+      "to": 10,
+      "at": 16.4,
+      "dur": 0.8,
+      "prefix": "+",
+      "suffix": "%"
+    },
+    {
+      "id": "b07",
+      "start": 18.7,
+      "type": "counter",
+      "icon": "money_with_wings",
+      "label": "Over a year, every month",
+      "from": 10,
+      "to": 214,
+      "at": 20.4,
+      "dur": 1.4,
+      "prefix": "+",
+      "suffix": "%",
+      "sub": {
+        "text": "Over 200% a year",
+        "at": 21.7
+      }
+    },
+    {
+      "id": "b08",
+      "start": 22.7,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "bank"
+        }
+      ],
+      "title": {
+        "text": "NO BANK",
+        "at": 23.0
+      },
+      "sub": {
+        "text": "offers you that",
+        "at": 23.4
+      }
+    },
+    {
+      "id": "b09",
+      "start": 24.8,
+      "type": "chapter",
+      "num": "02",
+      "of": "CHAPTER 2 OF 4",
+      "title": "THE REVERSAL",
+      "icon": "repeat_button",
+      "sub": {
+        "text": "Second question",
+        "at": 24.9
+      }
+    },
+    {
+      "id": "b10",
+      "start": 26.0,
+      "type": "versus",
+      "sep": "OR",
+      "items": [
+        {
+          "icon": "money_note",
+          "big": "$100",
+          "sub": "IN 12 MONTHS",
+          "at": 26.1
+        },
+        {
+          "icon": "money_with_wings",
+          "big": "$110",
+          "sub": "IN 13 MONTHS",
+          "at": 28.2
+        }
+      ]
+    },
+    {
+      "id": "b11",
+      "start": 30.7,
+      "type": "countdown",
+      "label": "CHOOSE!",
+      "n": 3,
+      "step": 1.0,
+      "at": 30.8
+    },
+    {
+      "id": "b12",
+      "start": 34.2,
+      "type": "versus",
+      "sep": "OR",
+      "label": "Most people",
+      "items": [
+        {
+          "icon": "money_note",
+          "big": "$100",
+          "sub": "IN 12 MONTHS",
+          "at": 34.2
+        },
+        {
+          "icon": "money_with_wings",
+          "big": "$110",
+          "sub": "IN 13 MONTHS",
+          "at": 34.2,
+          "mark_at": 36.3
+        }
+      ]
+    },
+    {
+      "id": "b13",
+      "start": 36.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "hourglass_done"
+        }
+      ],
+      "title": {
+        "text": "1 MONTH FOR +$10",
+        "at": 39.3
+      },
+      "sub": {
+        "text": "exactly the same wait",
+        "at": 37.3
+      }
+    },
+    {
+      "id": "b14",
+      "start": 41.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "cross_mark"
+        }
+      ],
+      "title": {
+        "text": "“NOW”",
+        "at": 41.9
+      },
+      "stamp": {
+        "text": "DISAPPEARED",
+        "at": 42.7
+      }
+    },
+    {
+      "id": "b15",
+      "start": 43.8,
+      "type": "chapter",
+      "num": "03",
+      "of": "CHAPTER 3 OF 4",
+      "title": "PRESENT BIAS",
+      "icon": "brain"
+    },
+    {
+      "id": "b16",
+      "start": 46.3,
+      "type": "bars",
+      "items": [
+        {
+          "label": "LATER",
+          "icon": "hourglass_done",
+          "to": 0.35,
+          "at": 46.8,
+          "color": "light"
+        },
+        {
+          "label": "NOW",
+          "icon": "alarm_clock",
+          "to": 0.35,
+          "at": 47.3,
+          "grow_to": 0.95,
+          "grow_at": 48.3,
+          "color": "dark"
+        }
+      ]
+    },
+    {
+      "id": "b17",
+      "start": 51.7,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "graduation_cap"
+        }
+      ],
+      "title": {
+        "text": "SINCE THE 1980s",
+        "at": 53.2
+      },
+      "sub": {
+        "text": "Economists have observed it",
+        "at": 51.9
+      }
+    },
+    {
+      "id": "b18",
+      "start": 55.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "money_with_wings"
+        }
+      ],
+      "title": "IT GETS EXPENSIVE"
+    },
+    {
+      "id": "b19",
+      "start": 57.3,
+      "type": "list",
+      "items": [
+        {
+          "icon": "calendar",
+          "text": "Saving pushed to tomorrow",
+          "at": 57.5
+        },
+        {
+          "icon": "shopping_cart",
+          "text": "Buy now, pay later",
+          "at": 59.6
+        },
+        {
+          "icon": "money_with_wings",
+          "text": "Emptying an account on a whim",
+          "at": 61.8
+        }
+      ]
+    },
+    {
+      "id": "b20",
+      "start": 63.9,
+      "type": "versus",
+      "sep": "VS",
+      "items": [
+        {
+          "icon": "thinking_face",
+          "big": "TODAY'S YOU",
+          "at": 64.1,
+          "mark_at": 68.2,
+          "size": 40
+        },
+        {
+          "icon": "hourglass_done",
+          "big": "YOU IN 30 YEARS",
+          "at": 65.9,
+          "size": 40
+        }
+      ]
+    },
+    {
+      "id": "b21",
+      "start": 70.4,
+      "type": "chapter",
+      "num": "04",
+      "of": "CHAPTER 4 OF 4",
+      "title": "THE FIX",
+      "icon": "light_bulb",
+      "sub": {
+        "text": "How do you get around it?",
+        "at": 70.6
+      }
+    },
+    {
+      "id": "b22",
+      "start": 72.6,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "mobile_phone_with_arrow"
+        }
+      ],
+      "title": {
+        "text": "AUTOMATE",
+        "at": 73.3
+      },
+      "sub": {
+        "text": "a transfer on payday",
+        "at": 73.9
+      },
+      "stamp": {
+        "text": "THE PRESENT GETS NO VOTE",
+        "at": 76.4,
+        "color": "yellow"
+      }
+    },
+    {
+      "id": "b23",
+      "start": 76.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "calendar"
+        }
+      ],
+      "title": {
+        "text": "DECIDE IN ADVANCE",
+        "at": 77.6
+      },
+      "sub": {
+        "text": "commit part of your next raise",
+        "at": 79.3
+      }
+    },
+    {
+      "id": "b24",
+      "start": 81.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "money_bag"
+        }
+      ],
+      "title": {
+        "text": "A PURPOSE",
+        "at": 82.6
+      },
+      "sub": {
+        "text": "for that money",
+        "at": 83.1
+      }
+    },
+    {
+      "id": "b25",
+      "start": 84.2,
+      "type": "list",
+      "items": [
+        {
+          "icon": "airplane",
+          "text": "Travel",
+          "at": 84.3
+        },
+        {
+          "icon": "shield",
+          "text": "Security",
+          "at": 84.9
+        },
+        {
+          "icon": "unlocked",
+          "text": "Freedom",
+          "at": 85.6
+        }
+      ]
+    },
+    {
+      "id": "b26",
+      "start": 86.4,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "light_bulb"
+        }
+      ],
+      "title": {
+        "text": "A CONCRETE FUTURE",
+        "at": 86.6
+      },
+      "sub": {
+        "text": "weighs more than a vague one",
+        "at": 87.6
+      }
+    },
+    {
+      "id": "b27",
+      "start": 89.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "AND YOU?",
+        "at": 89.4
+      },
+      "sub": {
+        "text": "What did you choose at the start?",
+        "at": 89.9
+      }
+    },
+    {
+      "id": "b28",
+      "start": 91.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "100 OR 110?",
+        "at": 91.6
+      },
+      "sub": {
+        "text": "Did you change your mind on question 2?",
+        "at": 94.3
+      },
+      "cta": {
+        "icon": "speech_balloon",
+        "text": "Tell us in the comments",
+        "at": 95.6
+      }
+    }
+  ],
+  "sfx": {
+    "beat": {
+      "file": "click-soft",
+      "volume": 0.25
+    },
+    "chapter": {
+      "file": "whoosh-short",
+      "volume": 0.4
+    },
+    "cues": [
+      {
+        "at": 6.8,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 7.8,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 8.8,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 14.9,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 20.4,
+        "file": "sparkle",
+        "volume": 0.4
+      },
+      {
+        "at": 30.8,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 31.8,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 32.8,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 36.3,
+        "file": "ping",
+        "volume": 0.35
+      },
+      {
+        "at": 42.7,
+        "file": "impact-bass-1",
+        "volume": 0.4
+      },
+      {
+        "at": 57.5,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 59.6,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 61.8,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 75.2,
+        "file": "sparkle",
+        "volume": 0.35
+      },
+      {
+        "at": 76.4,
+        "file": "impact-bass-2",
+        "volume": 0.4
+      },
+      {
+        "at": 95.6,
+        "file": "notification",
+        "volume": 0.35
+      }
+    ]
+  }
+}

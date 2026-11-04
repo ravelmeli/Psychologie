@@ -1,0 +1,745 @@
+{
+  "title": "Why $9.99 Makes You Buy",
+  "duration": 93.5,
+  "locale": {
+    "lang": "en"
+  },
+  "voice": {
+    "src": "assets/audio/voix.wav",
+    "duration": 90.7
+  },
+  "music": {
+    "src": "assets/audio/bgm.wav",
+    "volume": 0.35
+  },
+  "transcript": "transcript.json",
+  "fixes": {},
+  "header": {
+    "tag": "PSY · MONEY",
+    "title": "THE 9.99 EFFECT"
+  },
+  "sections": [
+    [
+      0,
+      "INTRO"
+    ],
+    [
+      11.9,
+      "01 · ONE CENT"
+    ],
+    [
+      16.0,
+      "02 · THE BIAS"
+    ],
+    [
+      41.4,
+      "03 · THE TRAP"
+    ],
+    [
+      60.9,
+      "04 · THE FIX"
+    ]
+  ],
+  "board": {
+    "title": "MY CART",
+    "balance_label": "DISPLAYED",
+    "static": "$9.99"
+  },
+  "poses": [
+    [
+      0,
+      "02_explique"
+    ],
+    [
+      2.0,
+      "03_designe_droite"
+    ],
+    [
+      4.4,
+      "04_reflechit"
+    ],
+    [
+      6.7,
+      "07_surpris"
+    ],
+    [
+      8.8,
+      "03_designe_droite"
+    ],
+    [
+      11.9,
+      "02_explique"
+    ],
+    [
+      16.0,
+      "03_designe_droite"
+    ],
+    [
+      18.5,
+      "02_explique"
+    ],
+    [
+      22.7,
+      "03_designe_droite"
+    ],
+    [
+      28.7,
+      "07_surpris"
+    ],
+    [
+      32.8,
+      "04_reflechit"
+    ],
+    [
+      41.4,
+      "06_inquiet"
+    ],
+    [
+      42.7,
+      "05_tente_achat"
+    ],
+    [
+      46.4,
+      "02_explique"
+    ],
+    [
+      50.3,
+      "04_reflechit"
+    ],
+    [
+      54.7,
+      "03_designe_droite"
+    ],
+    [
+      57.3,
+      "06_inquiet"
+    ],
+    [
+      60.9,
+      "08_rassure"
+    ],
+    [
+      63.0,
+      "13_compte_doigts"
+    ],
+    [
+      65.3,
+      "03_designe_droite"
+    ],
+    [
+      67.3,
+      "04_reflechit"
+    ],
+    [
+      70.8,
+      "13_compte_doigts"
+    ],
+    [
+      75.2,
+      "03_designe_droite"
+    ],
+    [
+      79.6,
+      "02_explique"
+    ],
+    [
+      82.5,
+      "08_rassure"
+    ],
+    [
+      85.5,
+      "04_reflechit"
+    ],
+    [
+      89.6,
+      "10_rit_content"
+    ]
+  ],
+  "camera": [
+    {
+      "at": 28.0,
+      "until": 31.5,
+      "scale": 1.05
+    },
+    {
+      "at": 57.5,
+      "until": 60.5,
+      "scale": 1.05
+    },
+    {
+      "at": 66.0,
+      "until": 67.2,
+      "scale": 1.04
+    }
+  ],
+  "spotlight": [
+    {
+      "at": 28.2,
+      "until": 31.3
+    },
+    {
+      "at": 57.7,
+      "until": 60.3
+    }
+  ],
+  "ambient": [
+    "coin",
+    "label",
+    "shopping_cart",
+    "money_bag",
+    "receipt",
+    "purse",
+    "dollar_banknote",
+    "shopping_bags"
+  ],
+  "beats": [
+    {
+      "id": "b01",
+      "start": 0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "WHICH PRICE IS LOWER?",
+        "at": 0.2,
+        "size": 50
+      }
+    },
+    {
+      "id": "b02",
+      "start": 2.0,
+      "type": "versus",
+      "sep": "OR",
+      "items": [
+        {
+          "icon": "label",
+          "big": "$4.00",
+          "at": 2.1
+        },
+        {
+          "icon": "label",
+          "big": "$3.99",
+          "at": 2.9
+        }
+      ]
+    },
+    {
+      "id": "b03",
+      "start": 4.4,
+      "type": "countdown",
+      "label": "CHOOSE!",
+      "n": 3,
+      "step": 0.7,
+      "at": 4.5
+    },
+    {
+      "id": "b04",
+      "start": 6.7,
+      "type": "versus",
+      "sep": "OR",
+      "items": [
+        {
+          "icon": "label",
+          "big": "$4.00",
+          "at": 6.7
+        },
+        {
+          "icon": "label",
+          "big": "$3.99",
+          "at": 6.7,
+          "mark_at": 7.0
+        }
+      ]
+    },
+    {
+      "id": "b05",
+      "start": 8.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "magnifying_glass_tilted_left"
+        }
+      ],
+      "title": {
+        "text": "LOOK AT THE GAP",
+        "at": 9.0,
+        "size": 54
+      }
+    },
+    {
+      "id": "b06",
+      "start": 10.9,
+      "type": "counter",
+      "icon": "coin",
+      "label": "Real gap",
+      "from": 0,
+      "to": 0.01,
+      "decimals": 2,
+      "at": 11.0,
+      "dur": 0.6,
+      "prefix": "$",
+      "suffix": ""
+    },
+    {
+      "id": "b07",
+      "start": 11.9,
+      "type": "chapter",
+      "num": "01",
+      "of": "CHAPTER 1 OF 4",
+      "title": "ONE CENT",
+      "icon": "coin"
+    },
+    {
+      "id": "b08",
+      "start": 13.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "brain"
+        }
+      ],
+      "title": {
+        "text": "YOUR BRAIN READS PRICES",
+        "at": 14.0,
+        "size": 44
+      },
+      "sub": {
+        "text": "differently",
+        "at": 15.0
+      }
+    },
+    {
+      "id": "b09",
+      "start": 16.0,
+      "type": "chapter",
+      "num": "02",
+      "of": "CHAPTER 2 OF 4",
+      "title": "THE LEFT-DIGIT EFFECT",
+      "icon": "label"
+    },
+    {
+      "id": "b10",
+      "start": 18.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "eyes"
+        }
+      ],
+      "title": {
+        "text": "READ LEFT TO RIGHT",
+        "at": 18.7,
+        "size": 50
+      },
+      "sub": {
+        "text": "the first digit weighs too much",
+        "at": 20.4
+      }
+    },
+    {
+      "id": "b11",
+      "start": 22.7,
+      "type": "versus",
+      "sep": "VS",
+      "items": [
+        {
+          "icon": "label",
+          "big": "$3.99: “$3 AND CHANGE”",
+          "size": 30,
+          "at": 22.9
+        },
+        {
+          "icon": "label",
+          "big": "$4.00: “$4”",
+          "size": 30,
+          "at": 26.5,
+          "mark_at": 28.0
+        }
+      ]
+    },
+    {
+      "id": "b12",
+      "start": 28.7,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "balance_scale"
+        }
+      ],
+      "title": {
+        "text": "A MUCH BIGGER GAP",
+        "at": 29.2,
+        "size": 50
+      },
+      "sub": {
+        "text": "than that one cent",
+        "at": 31.2
+      }
+    },
+    {
+      "id": "b13",
+      "start": 32.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "graduation_cap"
+        }
+      ],
+      "title": {
+        "text": "THOMAS & MORWITZ",
+        "at": 33.5,
+        "size": 46
+      },
+      "sub": {
+        "text": "left digit drops: gap underestimated",
+        "at": 37.2
+      }
+    },
+    {
+      "id": "b14",
+      "start": 41.4,
+      "type": "chapter",
+      "num": "03",
+      "of": "CHAPTER 3 OF 4",
+      "title": "THE RETAILERS",
+      "icon": "shopping_bags",
+      "sub": {
+        "text": "They know it",
+        "at": 41.8
+      }
+    },
+    {
+      "id": "b15",
+      "start": 42.7,
+      "type": "list",
+      "items": [
+        {
+          "icon": "label",
+          "text": "$9.99",
+          "at": 42.7
+        },
+        {
+          "icon": "label",
+          "text": "$19.99",
+          "at": 43.6
+        },
+        {
+          "icon": "label",
+          "text": "$49.99",
+          "at": 44.9
+        }
+      ]
+    },
+    {
+      "id": "b16",
+      "start": 46.4,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "shopping_cart"
+        }
+      ],
+      "title": {
+        "text": "JUST UNDER THE THRESHOLD",
+        "at": 46.6,
+        "size": 44
+      },
+      "sub": {
+        "text": "from coffee to couches",
+        "at": 48.5
+      }
+    },
+    {
+      "id": "b17",
+      "start": 50.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thought_balloon"
+        }
+      ],
+      "title": {
+        "text": "FILED BY THE LEFT DIGIT",
+        "at": 52.4,
+        "size": 44
+      }
+    },
+    {
+      "id": "b18",
+      "start": 54.7,
+      "type": "list",
+      "items": [
+        {
+          "icon": "label",
+          "text": "Under $10",
+          "at": 54.8
+        },
+        {
+          "icon": "label",
+          "text": "Under $50",
+          "at": 55.9
+        }
+      ]
+    },
+    {
+      "id": "b19",
+      "start": 57.3,
+      "type": "versus",
+      "sep": "NOT",
+      "items": [
+        {
+          "icon": "money_bag",
+          "big": "OUR BUDGET",
+          "size": 36,
+          "at": 57.4
+        },
+        {
+          "icon": "label",
+          "big": "A THRESHOLD",
+          "size": 36,
+          "at": 59.2,
+          "mark_at": 59.7
+        }
+      ]
+    },
+    {
+      "id": "b20",
+      "start": 60.9,
+      "type": "chapter",
+      "num": "04",
+      "of": "CHAPTER 4 OF 4",
+      "title": "THE FIX",
+      "icon": "shield",
+      "sub": {
+        "text": "How do you defend yourself?",
+        "at": 61.1
+      }
+    },
+    {
+      "id": "b21",
+      "start": 63.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "chart_increasing"
+        }
+      ],
+      "title": {
+        "text": "1. ROUND UP",
+        "at": 63.6,
+        "size": 54
+      }
+    },
+    {
+      "id": "b22",
+      "start": 65.3,
+      "type": "counter",
+      "icon": "label",
+      "label": "$9.99 becomes",
+      "from": 9.99,
+      "to": 10,
+      "decimals": 2,
+      "at": 65.7,
+      "dur": 0.7,
+      "prefix": "$",
+      "suffix": ""
+    },
+    {
+      "id": "b23",
+      "start": 67.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "2. WOULD I BUY IT AT $10?",
+        "at": 67.5,
+        "size": 44
+      }
+    },
+    {
+      "id": "b24",
+      "start": 70.8,
+      "type": "versus",
+      "sep": "THEN",
+      "items": [
+        {
+          "icon": "cross_mark",
+          "big": "IF THE ANSWER IS NO",
+          "size": 32,
+          "at": 71.0
+        },
+        {
+          "icon": "label",
+          "big": "IT'S THE NUMBER",
+          "size": 34,
+          "at": 72.8,
+          "mark_at": 73.9
+        }
+      ]
+    },
+    {
+      "id": "b25",
+      "start": 75.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "magnifying_glass_tilted_left"
+        }
+      ],
+      "title": {
+        "text": "3. PRICE PER UNIT",
+        "at": 75.9,
+        "size": 50
+      },
+      "sub": {
+        "text": "not the displayed price",
+        "at": 78.2
+      }
+    },
+    {
+      "id": "b26",
+      "start": 79.6,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "calendar"
+        }
+      ],
+      "title": {
+        "text": "WHAT IT COSTS YOUR MONTH",
+        "at": 79.8,
+        "size": 42
+      }
+    },
+    {
+      "id": "b27",
+      "start": 82.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "brain"
+        }
+      ],
+      "title": {
+        "text": "A PRICE IS A MESSAGE",
+        "at": 82.7,
+        "size": 46
+      },
+      "sub": {
+        "text": "to your brain",
+        "at": 84.6
+      }
+    },
+    {
+      "id": "b28",
+      "start": 85.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "AND YOU?",
+        "at": 85.6
+      },
+      "sub": {
+        "text": "Which price ending in 9 made you buy?",
+        "at": 86.9
+      }
+    },
+    {
+      "id": "b29",
+      "start": 89.6,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "YOUR PRICE?",
+        "at": 89.7,
+        "size": 52
+      },
+      "cta": {
+        "icon": "speech_balloon",
+        "text": "Tell us in the comments",
+        "at": 90.0
+      }
+    }
+  ],
+  "sfx": {
+    "beat": {
+      "file": "click-soft",
+      "volume": 0.25
+    },
+    "chapter": {
+      "file": "whoosh-short",
+      "volume": 0.4
+    },
+    "cues": [
+      {
+        "at": 4.5,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 5.2,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 5.9,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 7.0,
+        "file": "ping",
+        "volume": 0.35
+      },
+      {
+        "at": 11.0,
+        "file": "sparkle",
+        "volume": 0.35
+      },
+      {
+        "at": 42.7,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 43.6,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 44.9,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 59.7,
+        "file": "impact-bass-1",
+        "volume": 0.4
+      },
+      {
+        "at": 65.7,
+        "file": "sparkle",
+        "volume": 0.4
+      },
+      {
+        "at": 90.0,
+        "file": "notification",
+        "volume": 0.35
+      }
+    ]
+  }
+}

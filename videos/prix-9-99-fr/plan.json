@@ -1,0 +1,740 @@
+{
+  "title": "Pourquoi 9,99 € vous fait acheter",
+  "duration": 94.0,
+  "locale": {
+    "lang": "fr"
+  },
+  "voice": {
+    "src": "assets/audio/voix.wav",
+    "duration": 91.74
+  },
+  "music": {
+    "src": "assets/audio/bgm.wav",
+    "volume": 0.35
+  },
+  "transcript": "transcript.json",
+  "fixes": {},
+  "header": {
+    "tag": "PSY · ARGENT",
+    "title": "L'EFFET 9,99"
+  },
+  "sections": [
+    [
+      0,
+      "INTRO"
+    ],
+    [
+      13.1,
+      "01 · UN CENTIME"
+    ],
+    [
+      18.6,
+      "02 · LE BIAIS"
+    ],
+    [
+      43.4,
+      "03 · LE PIÈGE"
+    ],
+    [
+      63.3,
+      "04 · SOLUTION"
+    ]
+  ],
+  "board": {
+    "title": "MON PANIER",
+    "balance_label": "AFFICHÉ",
+    "static": "9,99 €"
+  },
+  "poses": [
+    [
+      0,
+      "02_explique"
+    ],
+    [
+      2.2,
+      "03_designe_droite"
+    ],
+    [
+      5.1,
+      "04_reflechit"
+    ],
+    [
+      7.2,
+      "07_surpris"
+    ],
+    [
+      9.7,
+      "03_designe_droite"
+    ],
+    [
+      13.1,
+      "02_explique"
+    ],
+    [
+      18.6,
+      "03_designe_droite"
+    ],
+    [
+      21.8,
+      "02_explique"
+    ],
+    [
+      25.6,
+      "03_designe_droite"
+    ],
+    [
+      32.1,
+      "07_surpris"
+    ],
+    [
+      35.4,
+      "04_reflechit"
+    ],
+    [
+      43.4,
+      "06_inquiet"
+    ],
+    [
+      44.9,
+      "05_tente_achat"
+    ],
+    [
+      49.6,
+      "02_explique"
+    ],
+    [
+      53.2,
+      "04_reflechit"
+    ],
+    [
+      56.8,
+      "03_designe_droite"
+    ],
+    [
+      59.6,
+      "06_inquiet"
+    ],
+    [
+      63.3,
+      "08_rassure"
+    ],
+    [
+      64.5,
+      "13_compte_doigts"
+    ],
+    [
+      67.6,
+      "03_designe_droite"
+    ],
+    [
+      70.1,
+      "04_reflechit"
+    ],
+    [
+      73.5,
+      "13_compte_doigts"
+    ],
+    [
+      77.5,
+      "03_designe_droite"
+    ],
+    [
+      81.2,
+      "02_explique"
+    ],
+    [
+      83.5,
+      "08_rassure"
+    ],
+    [
+      87.8,
+      "04_reflechit"
+    ],
+    [
+      90.5,
+      "10_rit_content"
+    ]
+  ],
+  "camera": [
+    {
+      "at": 29.0,
+      "until": 32.0,
+      "scale": 1.05
+    },
+    {
+      "at": 59.8,
+      "until": 62.8,
+      "scale": 1.05
+    },
+    {
+      "at": 68.5,
+      "until": 70.0,
+      "scale": 1.04
+    }
+  ],
+  "spotlight": [
+    {
+      "at": 29.2,
+      "until": 31.8
+    },
+    {
+      "at": 60.0,
+      "until": 62.4
+    }
+  ],
+  "ambient": [
+    "coin",
+    "label",
+    "shopping_cart",
+    "money_bag",
+    "receipt",
+    "purse",
+    "euro_banknote",
+    "shopping_bags"
+  ],
+  "beats": [
+    {
+      "id": "b01",
+      "start": 0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "QUEL PRIX EST LE PLUS BAS ?",
+        "at": 0.2,
+        "size": 50
+      }
+    },
+    {
+      "id": "b02",
+      "start": 2.2,
+      "type": "versus",
+      "sep": "OU",
+      "items": [
+        {
+          "icon": "label",
+          "big": "4,00 €",
+          "at": 2.3
+        },
+        {
+          "icon": "label",
+          "big": "3,99 €",
+          "at": 3.2
+        }
+      ]
+    },
+    {
+      "id": "b03",
+      "start": 5.1,
+      "type": "countdown",
+      "label": "CHOISISSEZ !",
+      "n": 3,
+      "step": 0.65,
+      "at": 5.2
+    },
+    {
+      "id": "b04",
+      "start": 7.2,
+      "type": "versus",
+      "sep": "OU",
+      "items": [
+        {
+          "icon": "label",
+          "big": "4,00 €",
+          "at": 7.2
+        },
+        {
+          "icon": "label",
+          "big": "3,99 €",
+          "at": 7.2,
+          "mark_at": 7.4
+        }
+      ]
+    },
+    {
+      "id": "b05",
+      "start": 9.7,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "magnifying_glass_tilted_left"
+        }
+      ],
+      "title": {
+        "text": "REGARDEZ L'ÉCART",
+        "at": 9.9,
+        "size": 54
+      }
+    },
+    {
+      "id": "b06",
+      "start": 11.2,
+      "type": "counter",
+      "icon": "coin",
+      "label": "Écart réel",
+      "from": 0,
+      "to": 0.01,
+      "decimals": 2,
+      "at": 11.4,
+      "dur": 0.8,
+      "prefix": "",
+      "suffix": " €"
+    },
+    {
+      "id": "b07",
+      "start": 13.1,
+      "type": "chapter",
+      "num": "01",
+      "of": "CHAPITRE 1 SUR 4",
+      "title": "UN CENTIME",
+      "icon": "coin"
+    },
+    {
+      "id": "b08",
+      "start": 14.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "brain"
+        }
+      ],
+      "title": {
+        "text": "VOTRE CERVEAU",
+        "at": 16.8
+      },
+      "sub": {
+        "text": "lit le prix autrement",
+        "at": 17.4
+      }
+    },
+    {
+      "id": "b09",
+      "start": 18.6,
+      "type": "chapter",
+      "num": "02",
+      "of": "CHAPITRE 2 SUR 4",
+      "title": "L'EFFET DU CHIFFRE DE GAUCHE",
+      "icon": "label"
+    },
+    {
+      "id": "b10",
+      "start": 21.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "eyes"
+        }
+      ],
+      "title": {
+        "text": "ON LIT DE GAUCHE À DROITE",
+        "at": 22.0,
+        "size": 46
+      },
+      "sub": {
+        "text": "le premier chiffre pèse trop lourd",
+        "at": 23.7
+      }
+    },
+    {
+      "id": "b11",
+      "start": 25.6,
+      "type": "versus",
+      "sep": "VS",
+      "items": [
+        {
+          "icon": "label",
+          "big": "3,99 € : « 3 € ET QUELQUES »",
+          "size": 30,
+          "at": 25.8
+        },
+        {
+          "icon": "label",
+          "big": "4,00 € : « 4 € »",
+          "size": 30,
+          "at": 28.9,
+          "mark_at": 30.6
+        }
+      ]
+    },
+    {
+      "id": "b12",
+      "start": 32.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "balance_scale"
+        }
+      ],
+      "title": {
+        "text": "UN ÉCART BIEN PLUS GRAND",
+        "at": 32.3,
+        "size": 48
+      },
+      "sub": {
+        "text": "que ce centime",
+        "at": 33.7
+      }
+    },
+    {
+      "id": "b13",
+      "start": 35.4,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "graduation_cap"
+        }
+      ],
+      "title": {
+        "text": "THOMAS & MORWITZ",
+        "at": 36.1,
+        "size": 46
+      },
+      "sub": {
+        "text": "chiffre de gauche en baisse : écart sous-estimé",
+        "at": 39.0
+      }
+    },
+    {
+      "id": "b14",
+      "start": 43.4,
+      "type": "chapter",
+      "num": "03",
+      "of": "CHAPITRE 3 SUR 4",
+      "title": "LES COMMERÇANTS",
+      "icon": "shopping_bags",
+      "sub": {
+        "text": "le savent",
+        "at": 44.0
+      }
+    },
+    {
+      "id": "b15",
+      "start": 44.9,
+      "type": "list",
+      "items": [
+        {
+          "icon": "label",
+          "text": "9,99 €",
+          "at": 44.9
+        },
+        {
+          "icon": "label",
+          "text": "19,99 €",
+          "at": 46.1
+        },
+        {
+          "icon": "label",
+          "text": "49,99 €",
+          "at": 47.6
+        }
+      ]
+    },
+    {
+      "id": "b16",
+      "start": 49.6,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "shopping_cart"
+        }
+      ],
+      "title": {
+        "text": "JUSTE EN DESSOUS DU PALIER",
+        "at": 49.8,
+        "size": 44
+      },
+      "sub": {
+        "text": "du café au canapé",
+        "at": 51.4
+      }
+    },
+    {
+      "id": "b17",
+      "start": 53.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thought_balloon"
+        }
+      ],
+      "title": {
+        "text": "ON CLASSE PAR LE CHIFFRE DE GAUCHE",
+        "at": 54.6,
+        "size": 42
+      }
+    },
+    {
+      "id": "b18",
+      "start": 56.8,
+      "type": "list",
+      "items": [
+        {
+          "icon": "label",
+          "text": "Moins de 10 €",
+          "at": 57.0
+        },
+        {
+          "icon": "label",
+          "text": "Moins de 50 €",
+          "at": 58.3
+        }
+      ]
+    },
+    {
+      "id": "b19",
+      "start": 59.6,
+      "type": "versus",
+      "sep": "PAS",
+      "items": [
+        {
+          "icon": "money_bag",
+          "big": "VOTRE BUDGET",
+          "size": 36,
+          "at": 60.0
+        },
+        {
+          "icon": "label",
+          "big": "UN SEUIL",
+          "size": 36,
+          "at": 61.3,
+          "mark_at": 61.9
+        }
+      ]
+    },
+    {
+      "id": "b20",
+      "start": 63.3,
+      "type": "chapter",
+      "num": "04",
+      "of": "CHAPITRE 4 SUR 4",
+      "title": "COMMENT VOUS DÉFENDRE",
+      "icon": "shield"
+    },
+    {
+      "id": "b21",
+      "start": 64.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "chart_increasing"
+        }
+      ],
+      "title": {
+        "text": "1. ARRONDISSEZ VERS LE HAUT",
+        "at": 65.1,
+        "size": 46
+      }
+    },
+    {
+      "id": "b22",
+      "start": 67.6,
+      "type": "counter",
+      "icon": "label",
+      "label": "9,99 € devient",
+      "from": 9.99,
+      "to": 10,
+      "decimals": 2,
+      "at": 68.7,
+      "dur": 0.7,
+      "prefix": "",
+      "suffix": " €"
+    },
+    {
+      "id": "b23",
+      "start": 70.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "2. L'ACHÈTERAIS-JE À 10 € ?",
+        "at": 70.5,
+        "size": 46
+      }
+    },
+    {
+      "id": "b24",
+      "start": 73.5,
+      "type": "versus",
+      "sep": "ALORS",
+      "items": [
+        {
+          "icon": "cross_mark",
+          "big": "RÉPONSE : NON",
+          "size": 36,
+          "at": 74.1
+        },
+        {
+          "icon": "label",
+          "big": "C'EST LE CHIFFRE QUI ATTIRE",
+          "size": 30,
+          "at": 75.4,
+          "mark_at": 76.3
+        }
+      ]
+    },
+    {
+      "id": "b25",
+      "start": 77.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "magnifying_glass_tilted_left"
+        }
+      ],
+      "title": {
+        "text": "3. PRIX AU KILO OU AU LITRE",
+        "at": 78.0,
+        "size": 44
+      },
+      "sub": {
+        "text": "pas le prix affiché",
+        "at": 79.8
+      }
+    },
+    {
+      "id": "b26",
+      "start": 81.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "calendar"
+        }
+      ],
+      "title": {
+        "text": "CE QUE ÇA REPRÉSENTE SUR VOTRE MOIS",
+        "at": 81.4,
+        "size": 40
+      }
+    },
+    {
+      "id": "b27",
+      "start": 83.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "brain"
+        }
+      ],
+      "title": {
+        "text": "UN PRIX, C'EST UN MESSAGE",
+        "at": 83.7,
+        "size": 46
+      },
+      "sub": {
+        "text": "adressé à votre cerveau",
+        "at": 85.9
+      }
+    },
+    {
+      "id": "b28",
+      "start": 87.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "ET VOUS ?",
+        "at": 87.9
+      },
+      "sub": {
+        "text": "Quel prix en 9 vous a fait acheter ?",
+        "at": 88.6
+      }
+    },
+    {
+      "id": "b29",
+      "start": 90.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "VOTRE PRIX EN 9 ?",
+        "at": 90.6,
+        "size": 44
+      },
+      "cta": {
+        "icon": "speech_balloon",
+        "text": "Dites-le en commentaire",
+        "at": 91.0
+      }
+    }
+  ],
+  "sfx": {
+    "beat": {
+      "file": "click-soft",
+      "volume": 0.25
+    },
+    "chapter": {
+      "file": "whoosh-short",
+      "volume": 0.4
+    },
+    "cues": [
+      {
+        "at": 5.2,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 5.85,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 6.5,
+        "file": "click",
+        "volume": 0.4
+      },
+      {
+        "at": 7.4,
+        "file": "ping",
+        "volume": 0.35
+      },
+      {
+        "at": 11.4,
+        "file": "sparkle",
+        "volume": 0.35
+      },
+      {
+        "at": 44.9,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 46.1,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 47.6,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 61.9,
+        "file": "impact-bass-1",
+        "volume": 0.4
+      },
+      {
+        "at": 68.7,
+        "file": "sparkle",
+        "volume": 0.4
+      },
+      {
+        "at": 91.0,
+        "file": "notification",
+        "volume": 0.35
+      }
+    ]
+  }
+}

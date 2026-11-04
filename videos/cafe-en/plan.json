@@ -1,0 +1,907 @@
+{
+  "title": "The $4 Coffee Isn't What's Ruining You",
+  "duration": 100.0,
+  "locale": {
+    "lang": "en"
+  },
+  "voice": {
+    "src": "assets/audio/voix.wav",
+    "duration": 98.16
+  },
+  "music": {
+    "src": "assets/audio/bgm.wav",
+    "volume": 0.35
+  },
+  "transcript": "transcript.json",
+  "fixes": {},
+  "header": {
+    "tag": "PSY · MONEY",
+    "title": "THE COFFEE MYTH"
+  },
+  "sections": [
+    [
+      0,
+      "INTRO"
+    ],
+    [
+      4.2,
+      "01 · THE MATH"
+    ],
+    [
+      16.8,
+      "02 · BIG ITEMS"
+    ],
+    [
+      33.2,
+      "03 · THE MYTH"
+    ],
+    [
+      58.6,
+      "04 · THE FIX"
+    ]
+  ],
+  "board": {
+    "title": "MY BUDGET",
+    "balance_label": "SALARY",
+    "balance": [
+      {
+        "at": 0,
+        "value": 3000
+      }
+    ]
+  },
+  "poses": [
+    [
+      0.0,
+      "02_explique"
+    ],
+    [
+      2.4,
+      "03_designe_droite"
+    ],
+    [
+      2.8,
+      "14_enerve"
+    ],
+    [
+      4.2,
+      "04_reflechit"
+    ],
+    [
+      5.6,
+      "03_designe_droite"
+    ],
+    [
+      9.0,
+      "02_explique"
+    ],
+    [
+      11.9,
+      "07_surpris"
+    ],
+    [
+      13.2,
+      "02_explique"
+    ],
+    [
+      16.8,
+      "03_designe_droite"
+    ],
+    [
+      22.9,
+      "02_explique"
+    ],
+    [
+      23.7,
+      "03_designe_droite"
+    ],
+    [
+      29.3,
+      "07_surpris"
+    ],
+    [
+      33.2,
+      "04_reflechit"
+    ],
+    [
+      35.9,
+      "02_explique"
+    ],
+    [
+      39.2,
+      "03_designe_droite"
+    ],
+    [
+      41.8,
+      "02_explique"
+    ],
+    [
+      45.0,
+      "03_designe_droite"
+    ],
+    [
+      47.3,
+      "04_reflechit"
+    ],
+    [
+      50.2,
+      "02_explique"
+    ],
+    [
+      51.1,
+      "06_inquiet"
+    ],
+    [
+      54.1,
+      "11_triste_decu"
+    ],
+    [
+      58.6,
+      "08_rassure"
+    ],
+    [
+      60.9,
+      "03_designe_droite"
+    ],
+    [
+      64.6,
+      "13_compte_doigts"
+    ],
+    [
+      68.4,
+      "07_surpris"
+    ],
+    [
+      72.0,
+      "03_designe_droite"
+    ],
+    [
+      76.9,
+      "08_rassure"
+    ],
+    [
+      80.1,
+      "03_designe_droite"
+    ],
+    [
+      84.8,
+      "02_explique"
+    ],
+    [
+      89.2,
+      "10_rit_content"
+    ],
+    [
+      90.8,
+      "03_designe_droite"
+    ],
+    [
+      93.6,
+      "04_reflechit"
+    ],
+    [
+      96.9,
+      "10_rit_content"
+    ]
+  ],
+  "camera": [
+    {
+      "at": 29.5,
+      "until": 32.4,
+      "scale": 1.05
+    },
+    {
+      "at": 52.2,
+      "until": 54.0,
+      "scale": 1.05
+    },
+    {
+      "at": 90.8,
+      "until": 93.0,
+      "scale": 1.04
+    }
+  ],
+  "spotlight": [
+    {
+      "at": 29.7,
+      "until": 32.2
+    },
+    {
+      "at": 52.4,
+      "until": 53.8
+    }
+  ],
+  "ambient": [
+    "coin",
+    "hot_beverage",
+    "house",
+    "automobile",
+    "money_bag",
+    "receipt",
+    "shopping_cart",
+    "dollar_banknote"
+  ],
+  "beats": [
+    {
+      "id": "b01",
+      "start": 0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "hot_beverage"
+        }
+      ],
+      "title": {
+        "text": "QUIT YOUR COFFEE",
+        "at": 0.9
+      },
+      "sub": {
+        "text": "to get rich",
+        "at": 1.7
+      }
+    },
+    {
+      "id": "b02",
+      "start": 2.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "cross_mark"
+        }
+      ],
+      "title": {
+        "text": "THAT'S WRONG",
+        "at": 2.9
+      }
+    },
+    {
+      "id": "b03",
+      "start": 4.2,
+      "type": "chapter",
+      "num": "01",
+      "of": "CHAPTER 1 OF 4",
+      "title": "THE MATH",
+      "icon": "clipboard"
+    },
+    {
+      "id": "b04",
+      "start": 5.6,
+      "type": "receipt",
+      "lines": [
+        {
+          "icon": "hot_beverage",
+          "left": "One coffee",
+          "right": "$4",
+          "at": 5.8
+        },
+        {
+          "icon": "calendar",
+          "left": "Days per month",
+          "right": "× 20",
+          "at": 6.9
+        },
+        {
+          "icon": "money_with_wings",
+          "left": "Per month",
+          "right": "$80",
+          "at": 8.0,
+          "color": "red"
+        }
+      ]
+    },
+    {
+      "id": "b05",
+      "start": 9.0,
+      "type": "counter",
+      "icon": "chart_decreasing",
+      "label": "Share of budget ($3,000 salary)",
+      "from": 0,
+      "to": 2.7,
+      "at": 11.3,
+      "dur": 1.0,
+      "prefix": "",
+      "suffix": "%",
+      "decimals": 1
+    },
+    {
+      "id": "b06",
+      "start": 13.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "cross_mark"
+        },
+        {
+          "icon": "hot_beverage",
+          "at": 13.8
+        }
+      ],
+      "title": {
+        "text": "CUT IT ENTIRELY?",
+        "at": 13.8
+      },
+      "sub": {
+        "text": "almost nothing changes",
+        "at": 14.8
+      }
+    },
+    {
+      "id": "b07",
+      "start": 16.8,
+      "type": "chapter",
+      "num": "02",
+      "of": "CHAPTER 2 OF 4",
+      "title": "THE BIG ITEMS",
+      "icon": "house"
+    },
+    {
+      "id": "b08",
+      "start": 18.9,
+      "type": "list",
+      "items": [
+        {
+          "icon": "house",
+          "text": "Housing",
+          "at": 19.0
+        },
+        {
+          "icon": "automobile",
+          "text": "Transportation",
+          "at": 19.7
+        },
+        {
+          "icon": "fork_and_knife_with_plate",
+          "text": "Food",
+          "at": 20.4
+        }
+      ]
+    },
+    {
+      "id": "b09",
+      "start": 21.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "money_bag"
+        }
+      ],
+      "title": {
+        "text": "OVER HALF",
+        "at": 21.5
+      },
+      "sub": {
+        "text": "of household spending",
+        "at": 22.5
+      }
+    },
+    {
+      "id": "b10",
+      "start": 23.7,
+      "type": "shares",
+      "label": "In our example",
+      "max": 33,
+      "items": [
+        {
+          "icon": "house",
+          "label": "Rent",
+          "text": "$1,000",
+          "value": 33,
+          "color": "dark",
+          "at": 24.8
+        },
+        {
+          "icon": "automobile",
+          "label": "Transportation",
+          "text": "$450",
+          "value": 15,
+          "color": "dark",
+          "at": 26.2
+        },
+        {
+          "icon": "shopping_cart",
+          "label": "Groceries",
+          "text": "$500",
+          "value": 17,
+          "color": "dark",
+          "at": 27.7
+        }
+      ]
+    },
+    {
+      "id": "b11",
+      "start": 29.3,
+      "type": "counter",
+      "icon": "hot_beverage",
+      "label": "Rent = times the coffee budget",
+      "from": 1,
+      "to": 12,
+      "at": 30.1,
+      "dur": 1.6,
+      "prefix": "×",
+      "suffix": "",
+      "sub": {
+        "text": "more than twelve times",
+        "at": 31.5
+      }
+    },
+    {
+      "id": "b12",
+      "start": 33.2,
+      "type": "chapter",
+      "num": "03",
+      "of": "CHAPTER 3 OF 4",
+      "title": "THE MYTH",
+      "icon": "thinking_face",
+      "sub": {
+        "text": "Why is it so widespread?",
+        "at": 33.3
+      }
+    },
+    {
+      "id": "b13",
+      "start": 35.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "eyes"
+        }
+      ],
+      "title": {
+        "text": "YOU SEE IT DAILY",
+        "at": 36.4
+      },
+      "sub": {
+        "text": "the coffee goes by",
+        "at": 37.2
+      }
+    },
+    {
+      "id": "b14",
+      "start": 39.2,
+      "type": "list",
+      "items": [
+        {
+          "icon": "eyes",
+          "text": "Visible",
+          "at": 39.3
+        },
+        {
+          "icon": "clipboard",
+          "text": "Easy to count",
+          "at": 40.0
+        },
+        {
+          "icon": "cross_mark",
+          "text": "Easy to cut",
+          "at": 40.7
+        }
+      ]
+    },
+    {
+      "id": "b15",
+      "start": 41.8,
+      "type": "list",
+      "items": [
+        {
+          "icon": "shield",
+          "text": "Insurance",
+          "at": 41.9
+        },
+        {
+          "icon": "mobile_phone",
+          "text": "Phone plan",
+          "at": 42.7
+        },
+        {
+          "icon": "light_bulb",
+          "text": "Energy contract",
+          "at": 43.7
+        }
+      ]
+    },
+    {
+      "id": "b16",
+      "start": 45.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "calendar"
+        }
+      ],
+      "title": {
+        "text": "ONCE A YEAR",
+        "at": 45.2
+      },
+      "sub": {
+        "text": "without thinking",
+        "at": 46.3
+      }
+    },
+    {
+      "id": "b17",
+      "start": 47.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "brain"
+        }
+      ],
+      "title": {
+        "text": "OUR BRAIN",
+        "at": 47.4
+      },
+      "sub": {
+        "text": "focuses on…",
+        "at": 47.9
+      }
+    },
+    {
+      "id": "b18",
+      "start": 48.6,
+      "type": "versus",
+      "sep": "NOT",
+      "items": [
+        {
+          "icon": "hot_beverage",
+          "big": "SMALL AND DAILY",
+          "size": 34,
+          "at": 48.7,
+          "mark_at": 49.2
+        },
+        {
+          "icon": "house",
+          "big": "BIG",
+          "size": 36,
+          "at": 49.9
+        }
+      ]
+    },
+    {
+      "id": "b19",
+      "start": 51.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "anguished_face"
+        }
+      ],
+      "title": {
+        "text": "A HIDDEN COST",
+        "at": 51.6
+      },
+      "stamp": {
+        "text": "GUILT",
+        "at": 53.3
+      }
+    },
+    {
+      "id": "b20",
+      "start": 54.1,
+      "type": "list",
+      "items": [
+        {
+          "icon": "hot_beverage",
+          "text": "Skip a small pleasure",
+          "at": 54.2
+        },
+        {
+          "icon": "smiling_face_with_smiling_eyes",
+          "text": "Feel virtuous",
+          "at": 55.5
+        },
+        {
+          "icon": "cross_mark",
+          "text": "Never touch the real levers",
+          "at": 56.4
+        }
+      ]
+    },
+    {
+      "id": "b21",
+      "start": 58.6,
+      "type": "chapter",
+      "num": "04",
+      "of": "CHAPTER 4 OF 4",
+      "title": "THE FIX",
+      "icon": "light_bulb",
+      "sub": {
+        "text": "Where do you act?",
+        "at": 58.9
+      }
+    },
+    {
+      "id": "b22",
+      "start": 60.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "calendar"
+        }
+      ],
+      "title": {
+        "text": "THE BIG ITEMS",
+        "at": 61.4
+      },
+      "sub": {
+        "text": "once a year",
+        "at": 62.3
+      }
+    },
+    {
+      "id": "b23",
+      "start": 64.6,
+      "type": "list",
+      "items": [
+        {
+          "icon": "shield",
+          "text": "Insurance",
+          "at": 65.2
+        },
+        {
+          "icon": "mobile_phone",
+          "text": "Phone plan",
+          "at": 66.1
+        },
+        {
+          "icon": "light_bulb",
+          "text": "Energy",
+          "at": 66.9
+        },
+        {
+          "icon": "bank",
+          "text": "Bank",
+          "at": 67.6
+        }
+      ]
+    },
+    {
+      "id": "b24",
+      "start": 68.4,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "hourglass_done"
+        }
+      ],
+      "title": {
+        "text": "ONE HOUR",
+        "at": 68.6
+      },
+      "sub": {
+        "text": "beats years without coffee",
+        "at": 69.6
+      }
+    },
+    {
+      "id": "b25",
+      "start": 72.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "mobile_phone_with_arrow"
+        }
+      ],
+      "title": {
+        "text": "AUTOMATE",
+        "at": 72.3
+      },
+      "sub": {
+        "text": "your savings",
+        "at": 73.0
+      },
+      "stamp": {
+        "text": "NO WILLPOWER NEEDED",
+        "at": 74.2,
+        "color": "yellow"
+      }
+    },
+    {
+      "id": "b26",
+      "start": 76.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "smiling_face_with_smiling_eyes"
+        }
+      ],
+      "title": {
+        "text": "KEEP YOUR PLEASURES",
+        "at": 77.7
+      },
+      "sub": {
+        "text": "but choose them",
+        "at": 78.8
+      }
+    },
+    {
+      "id": "b27",
+      "start": 80.1,
+      "type": "versus",
+      "sep": "OR",
+      "items": [
+        {
+          "icon": "smiling_face_with_smiling_eyes",
+          "big": "HAPPY: KEEP IT",
+          "size": 34,
+          "at": 80.3,
+          "mark_at": 82.1
+        },
+        {
+          "icon": "repeat_button",
+          "big": "REFLEX: CUT IT",
+          "size": 34,
+          "at": 82.8,
+          "mark_at": 84.5
+        }
+      ]
+    },
+    {
+      "id": "b28",
+      "start": 84.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "money_with_wings"
+        }
+      ],
+      "title": {
+        "text": "SMALL EXPENSES",
+        "at": 84.9
+      },
+      "sub": {
+        "text": "do add up",
+        "at": 86.4
+      },
+      "stamp": {
+        "text": "NOT THE PRIORITY",
+        "at": 87.6,
+        "color": "yellow"
+      }
+    },
+    {
+      "id": "b29",
+      "start": 89.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "hot_beverage"
+        }
+      ],
+      "title": {
+        "text": "THE COFFEE",
+        "at": 89.4
+      },
+      "sub": {
+        "text": "isn't your problem",
+        "at": 90.0
+      }
+    },
+    {
+      "id": "b30",
+      "start": 90.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "balance_scale"
+        }
+      ],
+      "title": {
+        "text": "THE BIG DECISIONS",
+        "at": 90.9
+      },
+      "sub": {
+        "text": "once a year",
+        "at": 92.0
+      }
+    },
+    {
+      "id": "b31",
+      "start": 93.6,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "AND YOU?",
+        "at": 93.8
+      },
+      "sub": {
+        "text": "Which category really weighs on you?",
+        "at": 94.4
+      }
+    },
+    {
+      "id": "b32",
+      "start": 96.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "YOUR ANSWER?",
+        "at": 97.0
+      },
+      "cta": {
+        "icon": "speech_balloon",
+        "text": "Tell us in the comments",
+        "at": 97.3
+      }
+    }
+  ],
+  "sfx": {
+    "beat": {
+      "file": "click-soft",
+      "volume": 0.25
+    },
+    "chapter": {
+      "file": "whoosh-short",
+      "volume": 0.4
+    },
+    "cues": [
+      {
+        "at": 5.8,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 6.9,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 8.0,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 11.3,
+        "file": "ping",
+        "volume": 0.35
+      },
+      {
+        "at": 24.8,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 26.2,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 27.7,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 30.1,
+        "file": "sparkle",
+        "volume": 0.4
+      },
+      {
+        "at": 53.3,
+        "file": "impact-bass-1",
+        "volume": 0.45
+      },
+      {
+        "at": 74.2,
+        "file": "impact-bass-2",
+        "volume": 0.4
+      },
+      {
+        "at": 87.6,
+        "file": "impact-bass-1",
+        "volume": 0.4
+      },
+      {
+        "at": 97.3,
+        "file": "notification",
+        "volume": 0.35
+      }
+    ]
+  }
+}

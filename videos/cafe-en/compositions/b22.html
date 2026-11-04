@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #b22 {
+          position: absolute;
+          inset: 0;
+          font-family: Montserrat, sans-serif;
+          color: #16140f;
+        }
+        #b22 .beat {
+          position: absolute; left: 428px; top: 460px; width: 508px; height: 820px;
+          display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px;
+          text-align: center;
+        }
+        #b22 .hid { opacity: 0; }
+        #b22 .ic { display: block; filter: drop-shadow(0 14px 18px rgba(40, 30, 10, 0.22)); }
+        #b22 .icons { display: flex; align-items: center; justify-content: center; gap: 22px; }
+        #b22 .sep { font-weight: 900; font-size: 64px; color: #a86f0c; }
+        #b22 .title { font-weight: 900; font-size: 66px; line-height: 1.04; letter-spacing: -0.02em; }
+        #b22 .sub { display: flex; align-items: center; gap: 14px; font-weight: 700; font-size: 38px; line-height: 1.2; color: #3a362e; }
+        #b22 .badge {
+          position: absolute; right: -6px; top: 0; display: flex; flex-direction: column; align-items: center; gap: 6px;
+          font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 30px; color: #c0352c;
+        }
+        #b22 .stamp {
+          font-weight: 900; font-size: 40px; letter-spacing: 0.02em; padding: 16px 24px;
+          border: 7px solid #d9453b; color: #c0352c; border-radius: 16px; background: #ffffff;
+        }
+        #b22 .stamp.yellow { border-color: #c98a12; color: #16140f; background: #f2b84b; }
+        #b22 .meter { width: 100%; }
+        #b22 .meter-top {
+          display: flex; justify-content: space-between; font-family: "JetBrains Mono", monospace;
+          font-weight: 700; font-size: 24px; letter-spacing: 0.1em; margin-bottom: 14px;
+        }
+        #b22 .bar { height: 44px; border-radius: 22px; background: #f1ece2; overflow: hidden; }
+        #b22 .fill { width: 100%; height: 100%; border-radius: 22px; transform-origin: left center; }
+        #b22 .plate {
+          width: 210px; height: 210px; border-radius: 40px; background: #f2b84b; box-shadow: 0 12px 0 #c98a12;
+          display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 120px;
+        }
+        #b22 .of { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.14em; color: #3f6b3c; }
+        #b22 .big { font-weight: 900; font-size: 140px; line-height: 1; letter-spacing: -0.03em; white-space: nowrap; }
+        #b22 .label { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.1em; text-transform: uppercase; color: #3f6b3c; }
+        #b22 .rows { width: 100%; display: flex; flex-direction: column; gap: 34px; }
+        #b22 .row { display: flex; align-items: center; gap: 26px; text-align: left; font-weight: 800; font-size: 40px; line-height: 1.15; }
+        #b22 .row.tile { font-weight: 900; font-size: 42px; white-space: nowrap; }
+        #b22 .iconwrap { position: relative; flex: none; }
+        #b22 .num {
+          position: absolute; left: -10px; top: -10px; width: 52px; height: 52px; border-radius: 26px;
+          background: #16140f; color: #ffffff; display: flex; align-items: center; justify-content: center;
+          font-weight: 900; font-size: 28px;
+        }
+        #b22 .chart { position: relative; width: 100%; height: 620px; display: flex; align-items: flex-end; justify-content: center; gap: 70px; }
+        #b22 .col { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+        #b22 .barv { width: 150px; height: 460px; border-radius: 22px 22px 8px 8px; transform-origin: center bottom; }
+        #b22 .cl { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.08em; }
+        #b22 .x2 {
+          position: absolute; right: 0; top: 0; width: 160px; height: 160px; border-radius: 80px; background: #f2b84b;
+          box-shadow: 0 10px 0 #c98a12; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 68px;
+        }
+        #b22 .receipt { width: 100%; display: flex; flex-direction: column; gap: 16px; }
+        #b22 .line {
+          display: flex; align-items: center; gap: 18px; font-family: "JetBrains Mono", monospace; font-weight: 700;
+          font-size: 30px; padding-bottom: 14px; border-bottom: 3px dashed #e6dfd1; text-align: left;
+        }
+        #b22 .line .l { flex: 1; }
+        #b22 .total { display: flex; flex-direction: column; align-items: center; gap: 6px; margin-top: 18px; }
+        #b22 .totalv { font-weight: 900; font-size: 92px; color: #c0352c; white-space: nowrap; }
+        #b22 .reaction { position: absolute; right: -10px; bottom: 120px; }
+        #b22 .buy {
+          align-self: stretch; font-weight: 900; font-size: 54px; letter-spacing: 0.04em; padding: 30px 0;
+          border-radius: 26px; background: #f2b84b; box-shadow: 0 12px 0 #c98a12;
+        }
+        #b22 .vs-card {
+          width: 100%; display: flex; align-items: center; gap: 24px; padding: 22px 28px; border-radius: 30px;
+          background: #f6f1e6; border: 4px solid #ece6d8; text-align: left;
+        }
+        #b22 .big2 { font-weight: 900; font-size: 54px; line-height: 1.05; letter-spacing: -0.02em; }
+        #b22 .sub2 { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 24px; letter-spacing: 0.08em; color: #3f6b3c; margin-top: 6px; }
+        #b22 .vs-or {
+          width: 76px; height: 76px; border-radius: 38px; background: #16140f; color: #ffffff; display: flex;
+          align-items: center; justify-content: center; font-weight: 900; font-size: 28px;
+        }
+        #b22 .cd { position: relative; width: 250px; height: 250px; }
+        #b22 .cdnum {
+          position: absolute; inset: 0; border-radius: 48px; background: #f2b84b; box-shadow: 0 14px 0 #c98a12;
+          display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 170px;
+        }
+        #b22 .rows.shares { gap: 36px; }
+        #b22 .share { display: flex; align-items: center; gap: 22px; width: 100%; text-align: left; }
+        #b22 .sh-body { flex: 1; }
+        #b22 .sh-top { display: flex; justify-content: space-between; font-weight: 800; font-size: 32px; margin-bottom: 10px; }
+        #b22 .sh-bar { height: 30px; border-radius: 15px; background: #f1ece2; overflow: hidden; }
+        #b22 .sh-fill { height: 100%; width: 100%; border-radius: 15px; transform-origin: left center; }
+        #b22 .cta {
+          display: flex; align-items: center; gap: 16px; padding: 18px 28px; border-radius: 44px;
+          background: #16140f; color: #ffffff; font-weight: 900; font-size: 30px; white-space: nowrap;
+        }
+      </style>
+      <div id="b22" data-composition-id="b22" data-width="1080" data-height="1920">
+        <div class="beat" id="b22-beat">
+          <div class="icons"><span class="" id="b22-e1"><img class="ic" src="assets/icons/calendar.png" alt="" style="width:230px;height:230px" /></span></div>
+          <div class="title hid" id="b22-e2">THE BIG ITEMS</div>
+          <div class="sub hid" id="b22-e3">once a year</div>
+        </div>
+      </div>
+      <script>
+        (() => {
+          const tl = gsap.timeline({ paused: true });
+          const pop = (s, t) =>
+            tl.fromTo(s, { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.32, ease: "back.out(2.2)" }, t);
+          const stamp = (s, t, r) =>
+            tl.fromTo(s, { opacity: 0, scale: 1.8, rotation: r }, { opacity: 1, scale: 1, rotation: r, duration: 0.26, ease: "power3.in" }, t);
+          const fr = (v, d, pre, suf) => {
+            const p = Math.abs(v).toFixed(d).split(".");
+            p[0] = p[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            return (v < 0 ? "-" : "") + pre + p.join(".") + suf;
+          };
+          const count = (sel, from, to, t, dur, d, pre, suf) => {
+            const el = document.querySelector(sel);
+            const o = { v: from };
+            tl.fromTo(o, { v: from }, { v: to, duration: dur, ease: "power2.out", immediateRender: false,
+              onUpdate: () => { el.textContent = fr(o.v, d, pre, suf); } }, t);
+          };
+          pop("#b22-e2", 0.5);
+          pop("#b22-e3", 1.4);
+          tl.fromTo("#b22-beat", { opacity: 0, scale: 0.9, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "back.out(1.7)" }, 0);
+          tl.fromTo("#b22-beat", { opacity: 1, scale: 1 }, { opacity: 0, scale: 0.92, duration: 0.15, ease: "power2.in", immediateRender: false }, 3.55);
+          window.__timelines["b22"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

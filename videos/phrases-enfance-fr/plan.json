@@ -1,0 +1,694 @@
+{
+  "title": "Les phrases sur l'argent entendues dans l'enfance",
+  "duration": 103.5,
+  "locale": {
+    "lang": "fr"
+  },
+  "voice": {
+    "src": "assets/audio/voix.wav",
+    "duration": 101.76
+  },
+  "music": {
+    "src": "assets/audio/bgm.wav",
+    "volume": 0.35
+  },
+  "transcript": "transcript.json",
+  "fixes": {},
+  "header": {
+    "tag": "PSY · ARGENT",
+    "title": "LES PHRASES D'ENFANCE"
+  },
+  "sections": [
+    [
+      0,
+      "INTRO"
+    ],
+    [
+      8.6,
+      "01 · SCRIPTS"
+    ],
+    [
+      33.6,
+      "02 · RÉFLEXES"
+    ],
+    [
+      52.4,
+      "03 · LE PIÈGE"
+    ],
+    [
+      63.3,
+      "04 · SOLUTION"
+    ]
+  ],
+  "board": {
+    "title": "MA TÊTE",
+    "balance_label": "CROYANCES",
+    "static": "SCRIPTS"
+  },
+  "poses": [
+    [
+      0.0,
+      "02_explique"
+    ],
+    [
+      3.0,
+      "04_reflechit"
+    ],
+    [
+      5.3,
+      "06_inquiet"
+    ],
+    [
+      8.6,
+      "03_designe_droite"
+    ],
+    [
+      14.0,
+      "02_explique"
+    ],
+    [
+      19.1,
+      "04_reflechit"
+    ],
+    [
+      21.2,
+      "03_designe_droite"
+    ],
+    [
+      28.4,
+      "11_triste_decu"
+    ],
+    [
+      33.6,
+      "02_explique"
+    ],
+    [
+      36.6,
+      "06_inquiet"
+    ],
+    [
+      40.7,
+      "11_triste_decu"
+    ],
+    [
+      46.9,
+      "07_surpris"
+    ],
+    [
+      52.4,
+      "04_reflechit"
+    ],
+    [
+      54.9,
+      "02_explique"
+    ],
+    [
+      56.7,
+      "03_designe_droite"
+    ],
+    [
+      63.3,
+      "08_rassure"
+    ],
+    [
+      64.9,
+      "13_compte_doigts"
+    ],
+    [
+      67.3,
+      "03_designe_droite"
+    ],
+    [
+      71.9,
+      "04_reflechit"
+    ],
+    [
+      75.6,
+      "13_compte_doigts"
+    ],
+    [
+      78.0,
+      "03_designe_droite"
+    ],
+    [
+      80.5,
+      "08_rassure"
+    ],
+    [
+      86.1,
+      "13_compte_doigts"
+    ],
+    [
+      87.7,
+      "02_explique"
+    ],
+    [
+      90.5,
+      "03_designe_droite"
+    ],
+    [
+      97.0,
+      "04_reflechit"
+    ],
+    [
+      100.4,
+      "10_rit_content"
+    ]
+  ],
+  "camera": [
+    {
+      "at": 21.4,
+      "until": 25.0,
+      "scale": 1.04
+    },
+    {
+      "at": 93.3,
+      "until": 96.6,
+      "scale": 1.05
+    },
+    {
+      "at": 56.8,
+      "until": 60.0,
+      "scale": 1.04
+    }
+  ],
+  "spotlight": [
+    {
+      "at": 93.5,
+      "until": 96.4
+    },
+    {
+      "at": 58.8,
+      "until": 60.6
+    }
+  ],
+  "ambient": [
+    "coin",
+    "speech_balloon",
+    "thought_balloon",
+    "money_bag",
+    "receipt",
+    "purse",
+    "seedling",
+    "hourglass_done"
+  ],
+  "beats": [
+    {
+      "id": "b01",
+      "start": 0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "money_bag"
+        }
+      ],
+      "title": {
+        "text": "L'ARGENT NE TOMBE PAS DU CIEL",
+        "at": 0.3,
+        "size": 50
+      }
+    },
+    {
+      "id": "b02",
+      "start": 3.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "VOUS L'AVEZ ENTENDUE",
+        "at": 3.3,
+        "size": 54
+      },
+      "sub": {
+        "text": "enfant",
+        "at": 4.7
+      }
+    },
+    {
+      "id": "b03",
+      "start": 5.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "brain"
+        }
+      ],
+      "title": {
+        "text": "ELLE DIRIGE VOS CHOIX",
+        "at": 5.7,
+        "size": 54
+      },
+      "sub": {
+        "text": "encore aujourd'hui",
+        "at": 7.0
+      }
+    },
+    {
+      "id": "b04",
+      "start": 8.6,
+      "type": "chapter",
+      "num": "01",
+      "of": "CHAPITRE 1 SUR 4",
+      "title": "LES SCRIPTS D'ARGENT",
+      "icon": "thought_balloon",
+      "sub": {
+        "text": "des croyances",
+        "at": 11.0
+      }
+    },
+    {
+      "id": "b05",
+      "start": 14.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "graduation_cap"
+        }
+      ],
+      "title": {
+        "text": "BRAD KLONTZ",
+        "at": 14.5
+      },
+      "sub": {
+        "text": "idées apprises tôt, rarement choisies",
+        "at": 16.1
+      }
+    },
+    {
+      "id": "b06",
+      "start": 19.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "house"
+        }
+      ],
+      "title": {
+        "text": "CHEZ VOUS, ON DISAIT…",
+        "at": 19.3,
+        "size": 54
+      }
+    },
+    {
+      "id": "b07",
+      "start": 21.2,
+      "type": "bubbles",
+      "items": [
+        {
+          "text": "On n'a pas les moyens.",
+          "at": 21.2
+        },
+        {
+          "text": "Les riches sont malhonnêtes.",
+          "at": 22.6
+        },
+        {
+          "text": "On ne parle pas d'argent à table.",
+          "at": 24.4
+        },
+        {
+          "text": "L'argent ne fait pas le bonheur.",
+          "at": 26.2
+        }
+      ]
+    },
+    {
+      "id": "b08",
+      "start": 28.4,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "repeat_button"
+        }
+      ],
+      "title": {
+        "text": "RÉPÉTÉE DES DIZAINES DE FOIS",
+        "at": 29.2,
+        "size": 48
+      },
+      "sub": {
+        "text": "sans jamais être discutée",
+        "at": 31.6
+      }
+    },
+    {
+      "id": "b09",
+      "start": 33.6,
+      "type": "chapter",
+      "num": "02",
+      "of": "CHAPITRE 2 SUR 4",
+      "title": "LES RÉFLEXES",
+      "icon": "brain",
+      "sub": {
+        "text": "À l'âge adulte",
+        "at": 33.8
+      }
+    },
+    {
+      "id": "b10",
+      "start": 36.6,
+      "type": "list",
+      "items": [
+        {
+          "icon": "bank",
+          "text": "« On n'a pas les moyens » : évite son compte",
+          "at": 36.7
+        },
+        {
+          "icon": "money_with_wings",
+          "text": "« L'argent ne tombe pas du ciel » : culpabilise de dépenser",
+          "at": 40.8
+        },
+        {
+          "icon": "chart_increasing",
+          "text": "« Les riches sont malhonnêtes » : se méfie de la réussite",
+          "at": 47.0
+        }
+      ]
+    },
+    {
+      "id": "b11",
+      "start": 52.4,
+      "type": "chapter",
+      "num": "03",
+      "of": "CHAPITRE 3 SUR 4",
+      "title": "LE PIÈGE",
+      "icon": "eyes",
+      "sub": {
+        "text": "Vous ne les voyez pas",
+        "at": 53.5
+      }
+    },
+    {
+      "id": "b12",
+      "start": 54.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "light_bulb"
+        }
+      ],
+      "title": {
+        "text": "ÇA RESSEMBLE À DU BON SENS",
+        "at": 55.0,
+        "size": 50
+      }
+    },
+    {
+      "id": "b13",
+      "start": 56.7,
+      "type": "versus",
+      "sep": "MAIS",
+      "items": [
+        {
+          "icon": "thinking_face",
+          "big": "VOUS N'AVEZ PAS DÉCIDÉ D'Y CROIRE",
+          "size": 28,
+          "at": 56.8
+        },
+        {
+          "icon": "repeat_button",
+          "big": "UNE HABITUDE INSTALLÉE BIEN AVANT",
+          "size": 28,
+          "at": 58.9,
+          "mark_at": 60.3
+        }
+      ]
+    },
+    {
+      "id": "b14",
+      "start": 63.3,
+      "type": "chapter",
+      "num": "04",
+      "of": "CHAPITRE 4 SUR 4",
+      "title": "LA SOLUTION",
+      "icon": "light_bulb",
+      "sub": {
+        "text": "Comment s'en libérer ?",
+        "at": 63.5
+      }
+    },
+    {
+      "id": "b15",
+      "start": 64.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "magnifying_glass_tilted_left"
+        }
+      ],
+      "title": {
+        "text": "1. REPÉREZ LA PHRASE",
+        "at": 65.7,
+        "size": 54
+      }
+    },
+    {
+      "id": "b16",
+      "start": 67.3,
+      "type": "list",
+      "items": [
+        {
+          "icon": "shopping_cart",
+          "text": "Hésiter à dépenser",
+          "at": 68.0
+        },
+        {
+          "icon": "money_with_wings",
+          "text": "Demander une augmentation",
+          "at": 68.9
+        },
+        {
+          "icon": "bank",
+          "text": "Regarder son compte",
+          "at": 70.4
+        }
+      ]
+    },
+    {
+      "id": "b17",
+      "start": 71.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thought_balloon"
+        }
+      ],
+      "title": {
+        "text": "DEMANDEZ-VOUS",
+        "at": 72.0
+      },
+      "sub": {
+        "text": "Quelle phrase j'entends dans ma tête ?",
+        "at": 72.9
+      }
+    },
+    {
+      "id": "b18",
+      "start": 75.6,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "magnifying_glass_tilted_left"
+        }
+      ],
+      "title": {
+        "text": "2. D'OÙ VIENT-ELLE ?",
+        "at": 76.5,
+        "size": 54
+      }
+    },
+    {
+      "id": "b19",
+      "start": 78.0,
+      "type": "list",
+      "items": [
+        {
+          "icon": "speech_balloon",
+          "text": "Qui la disait ?",
+          "at": 78.1
+        },
+        {
+          "icon": "house",
+          "text": "Dans quelle situation ?",
+          "at": 78.9
+        }
+      ]
+    },
+    {
+      "id": "b20",
+      "start": 80.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "shield"
+        }
+      ],
+      "title": {
+        "text": "ELLE PROTÉGEAIT",
+        "at": 81.5
+      },
+      "sub": {
+        "text": "une réalité qui n'est peut-être plus la vôtre",
+        "at": 82.5
+      }
+    },
+    {
+      "id": "b21",
+      "start": 86.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "pencil"
+        }
+      ],
+      "title": {
+        "text": "3. RÉÉCRIVEZ-LA",
+        "at": 86.4,
+        "size": 54
+      }
+    },
+    {
+      "id": "b22",
+      "start": 87.7,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "balance_scale"
+        }
+      ],
+      "title": {
+        "text": "POUR LA RENDRE VRAIE",
+        "at": 88.8,
+        "size": 54
+      },
+      "sub": {
+        "text": "pas pour la nier",
+        "at": 87.9
+      }
+    },
+    {
+      "id": "b23",
+      "start": 90.5,
+      "type": "versus",
+      "sep": "DEVIENT",
+      "items": [
+        {
+          "icon": "cross_mark",
+          "big": "« L'ARGENT NE TOMBE PAS DU CIEL »",
+          "size": 28,
+          "at": 90.6
+        },
+        {
+          "icon": "seedling",
+          "big": "« L'ARGENT SE CONSTRUIT, ET J'AI LE DROIT D'EN PROFITER »",
+          "size": 28,
+          "at": 93.3,
+          "mark_at": 95.5
+        }
+      ]
+    },
+    {
+      "id": "b24",
+      "start": 97.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "ET VOUS ?",
+        "at": 97.1
+      },
+      "sub": {
+        "text": "Quelle phrase entendiez-vous chez vous ?",
+        "at": 97.9
+      }
+    },
+    {
+      "id": "b25",
+      "start": 100.4,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "VOTRE PHRASE ?",
+        "at": 100.5
+      },
+      "cta": {
+        "icon": "speech_balloon",
+        "text": "Écrivez-la en commentaire",
+        "at": 101.0
+      }
+    }
+  ],
+  "sfx": {
+    "beat": {
+      "file": "click-soft",
+      "volume": 0.25
+    },
+    "chapter": {
+      "file": "whoosh-short",
+      "volume": 0.4
+    },
+    "cues": [
+      {
+        "at": 21.2,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 22.6,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 24.4,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 26.2,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 40.8,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 47.0,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 60.3,
+        "file": "ping",
+        "volume": 0.35
+      },
+      {
+        "at": 68.0,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 93.3,
+        "file": "sparkle",
+        "volume": 0.4
+      },
+      {
+        "at": 101.0,
+        "file": "notification",
+        "volume": 0.35
+      }
+    ]
+  }
+}

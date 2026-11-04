@@ -1,0 +1,694 @@
+{
+  "title": "Money Phrases You Heard in Childhood",
+  "duration": 96.0,
+  "locale": {
+    "lang": "en"
+  },
+  "voice": {
+    "src": "assets/audio/voix.wav",
+    "duration": 94.28
+  },
+  "music": {
+    "src": "assets/audio/bgm.wav",
+    "volume": 0.35
+  },
+  "transcript": "transcript.json",
+  "fixes": {},
+  "header": {
+    "tag": "PSY · MONEY",
+    "title": "CHILDHOOD PHRASES"
+  },
+  "sections": [
+    [
+      0,
+      "INTRO"
+    ],
+    [
+      7.8,
+      "01 · THE SCRIPTS"
+    ],
+    [
+      32.5,
+      "02 · REFLEXES"
+    ],
+    [
+      50.0,
+      "03 · THE TRAP"
+    ],
+    [
+      58.7,
+      "04 · THE FIX"
+    ]
+  ],
+  "board": {
+    "title": "MY HEAD",
+    "balance_label": "BELIEFS",
+    "static": "SCRIPTS"
+  },
+  "poses": [
+    [
+      0.0,
+      "02_explique"
+    ],
+    [
+      2.3,
+      "04_reflechit"
+    ],
+    [
+      4.5,
+      "06_inquiet"
+    ],
+    [
+      7.8,
+      "03_designe_droite"
+    ],
+    [
+      12.2,
+      "02_explique"
+    ],
+    [
+      17.6,
+      "04_reflechit"
+    ],
+    [
+      19.5,
+      "03_designe_droite"
+    ],
+    [
+      27.3,
+      "11_triste_decu"
+    ],
+    [
+      32.5,
+      "02_explique"
+    ],
+    [
+      34.9,
+      "06_inquiet"
+    ],
+    [
+      39.2,
+      "11_triste_decu"
+    ],
+    [
+      44.8,
+      "07_surpris"
+    ],
+    [
+      50.0,
+      "04_reflechit"
+    ],
+    [
+      52.1,
+      "02_explique"
+    ],
+    [
+      53.9,
+      "03_designe_droite"
+    ],
+    [
+      58.7,
+      "08_rassure"
+    ],
+    [
+      61.4,
+      "13_compte_doigts"
+    ],
+    [
+      63.3,
+      "03_designe_droite"
+    ],
+    [
+      67.3,
+      "04_reflechit"
+    ],
+    [
+      70.7,
+      "13_compte_doigts"
+    ],
+    [
+      72.6,
+      "03_designe_droite"
+    ],
+    [
+      74.9,
+      "08_rassure"
+    ],
+    [
+      80.2,
+      "13_compte_doigts"
+    ],
+    [
+      81.7,
+      "02_explique"
+    ],
+    [
+      84.7,
+      "03_designe_droite"
+    ],
+    [
+      90.5,
+      "04_reflechit"
+    ],
+    [
+      93.1,
+      "10_rit_content"
+    ]
+  ],
+  "camera": [
+    {
+      "at": 19.7,
+      "until": 23.5,
+      "scale": 1.04
+    },
+    {
+      "at": 86.8,
+      "until": 90.0,
+      "scale": 1.05
+    },
+    {
+      "at": 54.0,
+      "until": 57.5,
+      "scale": 1.04
+    }
+  ],
+  "spotlight": [
+    {
+      "at": 87.0,
+      "until": 89.8
+    },
+    {
+      "at": 56.0,
+      "until": 58.0
+    }
+  ],
+  "ambient": [
+    "coin",
+    "speech_balloon",
+    "thought_balloon",
+    "money_bag",
+    "receipt",
+    "purse",
+    "seedling",
+    "hourglass_done"
+  ],
+  "beats": [
+    {
+      "id": "b01",
+      "start": 0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "money_bag"
+        }
+      ],
+      "title": {
+        "text": "MONEY DOESN'T GROW ON TREES",
+        "at": 0.2,
+        "size": 50
+      }
+    },
+    {
+      "id": "b02",
+      "start": 2.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "YOU'VE HEARD IT",
+        "at": 2.5,
+        "size": 56
+      },
+      "sub": {
+        "text": "as a kid",
+        "at": 4.0
+      }
+    },
+    {
+      "id": "b03",
+      "start": 4.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "brain"
+        }
+      ],
+      "title": {
+        "text": "IT STEERS YOUR CHOICES",
+        "at": 5.4,
+        "size": 52
+      },
+      "sub": {
+        "text": "even today",
+        "at": 6.4
+      }
+    },
+    {
+      "id": "b04",
+      "start": 7.8,
+      "type": "chapter",
+      "num": "01",
+      "of": "CHAPTER 1 OF 4",
+      "title": "MONEY SCRIPTS",
+      "icon": "thought_balloon",
+      "sub": {
+        "text": "beliefs",
+        "at": 9.6
+      }
+    },
+    {
+      "id": "b05",
+      "start": 12.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "graduation_cap"
+        }
+      ],
+      "title": {
+        "text": "BRAD KLONTZ",
+        "at": 12.7
+      },
+      "sub": {
+        "text": "ideas learned early, rarely chosen",
+        "at": 14.6
+      }
+    },
+    {
+      "id": "b06",
+      "start": 17.6,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "house"
+        }
+      ],
+      "title": {
+        "text": "WHAT WAS SAID AT HOME",
+        "at": 17.8,
+        "size": 52
+      }
+    },
+    {
+      "id": "b07",
+      "start": 19.5,
+      "type": "bubbles",
+      "items": [
+        {
+          "text": "We can't afford it.",
+          "at": 19.5
+        },
+        {
+          "text": "Rich people are dishonest.",
+          "at": 21.1
+        },
+        {
+          "text": "We don't talk about money at the table.",
+          "at": 22.9
+        },
+        {
+          "text": "Money can't buy happiness.",
+          "at": 25.1
+        }
+      ]
+    },
+    {
+      "id": "b08",
+      "start": 27.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "repeat_button"
+        }
+      ],
+      "title": {
+        "text": "REPEATED DOZENS OF TIMES",
+        "at": 27.7,
+        "size": 48
+      },
+      "sub": {
+        "text": "never once discussed",
+        "at": 30.0
+      }
+    },
+    {
+      "id": "b09",
+      "start": 32.5,
+      "type": "chapter",
+      "num": "02",
+      "of": "CHAPTER 2 OF 4",
+      "title": "THE REFLEXES",
+      "icon": "brain",
+      "sub": {
+        "text": "As an adult",
+        "at": 32.6
+      }
+    },
+    {
+      "id": "b10",
+      "start": 34.9,
+      "type": "list",
+      "items": [
+        {
+          "icon": "bank",
+          "text": "“We can't afford it”: avoids their account",
+          "at": 35.0
+        },
+        {
+          "icon": "money_with_wings",
+          "text": "“Money doesn't grow on trees”: guilt about spending",
+          "at": 39.3
+        },
+        {
+          "icon": "chart_increasing",
+          "text": "“Rich people are dishonest”: distrusts success",
+          "at": 44.9
+        }
+      ]
+    },
+    {
+      "id": "b11",
+      "start": 50.0,
+      "type": "chapter",
+      "num": "03",
+      "of": "CHAPTER 3 OF 4",
+      "title": "THE TRAP",
+      "icon": "eyes",
+      "sub": {
+        "text": "You don't see them",
+        "at": 50.5
+      }
+    },
+    {
+      "id": "b12",
+      "start": 52.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "light_bulb"
+        }
+      ],
+      "title": {
+        "text": "SOUNDS LIKE COMMON SENSE",
+        "at": 52.2,
+        "size": 50
+      }
+    },
+    {
+      "id": "b13",
+      "start": 53.9,
+      "type": "versus",
+      "sep": "BUT",
+      "items": [
+        {
+          "icon": "thinking_face",
+          "big": "YOU NEVER DECIDED TO BELIEVE THEM",
+          "size": 28,
+          "at": 54.0
+        },
+        {
+          "icon": "repeat_button",
+          "big": "A HABIT SET LONG BEFORE YOU COULD JUDGE",
+          "size": 28,
+          "at": 55.8,
+          "mark_at": 57.0
+        }
+      ]
+    },
+    {
+      "id": "b14",
+      "start": 58.7,
+      "type": "chapter",
+      "num": "04",
+      "of": "CHAPTER 4 OF 4",
+      "title": "THE FIX",
+      "icon": "light_bulb",
+      "sub": {
+        "text": "How do you free yourself?",
+        "at": 58.9
+      }
+    },
+    {
+      "id": "b15",
+      "start": 61.4,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "magnifying_glass_tilted_left"
+        }
+      ],
+      "title": {
+        "text": "1. SPOT THE PHRASE",
+        "at": 62.0,
+        "size": 54
+      }
+    },
+    {
+      "id": "b16",
+      "start": 63.3,
+      "type": "list",
+      "items": [
+        {
+          "icon": "shopping_cart",
+          "text": "Hesitate to spend",
+          "at": 63.8
+        },
+        {
+          "icon": "money_with_wings",
+          "text": "Ask for a raise",
+          "at": 64.8
+        },
+        {
+          "icon": "bank",
+          "text": "Look at your account",
+          "at": 66.0
+        }
+      ]
+    },
+    {
+      "id": "b17",
+      "start": 67.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thought_balloon"
+        }
+      ],
+      "title": {
+        "text": "ASK YOURSELF",
+        "at": 67.4
+      },
+      "sub": {
+        "text": "What sentence do I hear in my head?",
+        "at": 67.9
+      }
+    },
+    {
+      "id": "b18",
+      "start": 70.7,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "magnifying_glass_tilted_left"
+        }
+      ],
+      "title": {
+        "text": "2. WHERE DOES IT COME FROM?",
+        "at": 70.9,
+        "size": 48
+      }
+    },
+    {
+      "id": "b19",
+      "start": 72.6,
+      "type": "list",
+      "items": [
+        {
+          "icon": "speech_balloon",
+          "text": "Who said it?",
+          "at": 72.7
+        },
+        {
+          "icon": "house",
+          "text": "In what situation?",
+          "at": 73.5
+        }
+      ]
+    },
+    {
+      "id": "b20",
+      "start": 74.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "shield"
+        }
+      ],
+      "title": {
+        "text": "IT WAS PROTECTING",
+        "at": 75.6
+      },
+      "sub": {
+        "text": "a reality that may no longer be yours",
+        "at": 76.7
+      }
+    },
+    {
+      "id": "b21",
+      "start": 80.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "pencil"
+        }
+      ],
+      "title": {
+        "text": "3. REWRITE IT",
+        "at": 80.7,
+        "size": 54
+      }
+    },
+    {
+      "id": "b22",
+      "start": 81.7,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "balance_scale"
+        }
+      ],
+      "title": {
+        "text": "MAKE IT TRUE TODAY",
+        "at": 83.0,
+        "size": 54
+      },
+      "sub": {
+        "text": "not to deny it",
+        "at": 81.8
+      }
+    },
+    {
+      "id": "b23",
+      "start": 84.7,
+      "type": "versus",
+      "sep": "BECOMES",
+      "items": [
+        {
+          "icon": "cross_mark",
+          "big": "“MONEY DOESN'T GROW ON TREES”",
+          "size": 28,
+          "at": 84.8
+        },
+        {
+          "icon": "seedling",
+          "big": "“MONEY GETS BUILT, AND I'M ALLOWED TO ENJOY IT”",
+          "size": 28,
+          "at": 86.8,
+          "mark_at": 88.5
+        }
+      ]
+    },
+    {
+      "id": "b24",
+      "start": 90.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "AND YOU?",
+        "at": 90.6
+      },
+      "sub": {
+        "text": "Which money phrase did you hear at home?",
+        "at": 91.2
+      }
+    },
+    {
+      "id": "b25",
+      "start": 93.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "YOUR PHRASE?",
+        "at": 93.2
+      },
+      "cta": {
+        "icon": "speech_balloon",
+        "text": "Write it in the comments",
+        "at": 93.5
+      }
+    }
+  ],
+  "sfx": {
+    "beat": {
+      "file": "click-soft",
+      "volume": 0.25
+    },
+    "chapter": {
+      "file": "whoosh-short",
+      "volume": 0.4
+    },
+    "cues": [
+      {
+        "at": 19.5,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 21.1,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 22.9,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 25.1,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 39.3,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 44.9,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 57.0,
+        "file": "ping",
+        "volume": 0.35
+      },
+      {
+        "at": 63.8,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 86.8,
+        "file": "sparkle",
+        "volume": 0.4
+      },
+      {
+        "at": 93.5,
+        "file": "notification",
+        "volume": 0.35
+      }
+    ]
+  }
+}

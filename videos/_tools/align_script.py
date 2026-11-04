@@ -24,12 +24,16 @@ def script_words(path):
     text = open(path, encoding="utf-8").read()
     parts = re.split(r"^---\s*$", text, flags=re.M)
     body = parts[1] if len(parts) > 2 else text
-    out = []
+    out, pending = [], ""
     for t in body.split():
-        if norm(t):
-            out.append(t)
-        elif out:  # symbole isolé (« % », « € ») : on le garde collé au mot précédent
-            out[-1] += "\u00a0" + t
+        if not norm(t):
+            if t in ("«", "“", "„"):  # guillemet ouvrant : se colle au mot suivant
+                pending = t + "\u00a0"
+            elif out:  # symbole isolé (« % », « € », « » ») : collé au mot précédent
+                out[-1] += "\u00a0" + t
+        else:
+            out.append(pending + t)
+            pending = ""
     return out
 
 

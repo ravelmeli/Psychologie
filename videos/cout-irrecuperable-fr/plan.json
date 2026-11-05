@@ -1,0 +1,796 @@
+{
+  "title": "Pourquoi vous gardez un abonnement que vous n'utilisez pas",
+  "duration": 93.0,
+  "locale": {
+    "lang": "fr"
+  },
+  "voice": {
+    "src": "assets/audio/voix.wav",
+    "duration": 91.0
+  },
+  "music": {
+    "src": "assets/audio/bgm.wav",
+    "volume": 0.35
+  },
+  "transcript": "transcript.json",
+  "fixes": {},
+  "header": {
+    "tag": "PSY · ARGENT",
+    "title": "COÛT IRRÉCUPÉRABLE"
+  },
+  "sections": [
+    [
+      0,
+      "INTRO"
+    ],
+    [
+      11.1,
+      "01 · LE BIAIS"
+    ],
+    [
+      27.7,
+      "02 · LE CERVEAU"
+    ],
+    [
+      50.1,
+      "03 · EXEMPLES"
+    ],
+    [
+      62.9,
+      "04 · SOLUTION"
+    ]
+  ],
+  "board": {
+    "title": "MON ABONNEMENT",
+    "balance_label": "PAR MOIS",
+    "static": "40 €"
+  },
+  "poses": [
+    [
+      0,
+      "02_explique"
+    ],
+    [
+      3.7,
+      "06_inquiet"
+    ],
+    [
+      7.2,
+      "04_reflechit"
+    ],
+    [
+      11.1,
+      "03_designe_droite"
+    ],
+    [
+      15.9,
+      "02_explique"
+    ],
+    [
+      23.3,
+      "04_reflechit"
+    ],
+    [
+      27.7,
+      "11_triste_decu"
+    ],
+    [
+      30.6,
+      "06_inquiet"
+    ],
+    [
+      36.0,
+      "03_designe_droite"
+    ],
+    [
+      41.3,
+      "02_explique"
+    ],
+    [
+      46.3,
+      "04_reflechit"
+    ],
+    [
+      50.1,
+      "03_designe_droite"
+    ],
+    [
+      60.3,
+      "11_triste_decu"
+    ],
+    [
+      62.9,
+      "08_rassure"
+    ],
+    [
+      65.0,
+      "13_compte_doigts"
+    ],
+    [
+      69.9,
+      "03_designe_droite"
+    ],
+    [
+      72.1,
+      "13_compte_doigts"
+    ],
+    [
+      76.3,
+      "04_reflechit"
+    ],
+    [
+      79.4,
+      "02_explique"
+    ],
+    [
+      82.1,
+      "08_rassure"
+    ],
+    [
+      84.2,
+      "03_designe_droite"
+    ],
+    [
+      87.5,
+      "04_reflechit"
+    ],
+    [
+      89.7,
+      "10_rit_content"
+    ]
+  ],
+  "camera": [
+    {
+      "at": 9.5,
+      "until": 11.0,
+      "scale": 1.05
+    },
+    {
+      "at": 47.3,
+      "until": 49.6,
+      "scale": 1.04
+    },
+    {
+      "at": 84.8,
+      "until": 87.2,
+      "scale": 1.05
+    }
+  ],
+  "spotlight": [
+    {
+      "at": 84.8,
+      "until": 87.0
+    },
+    {
+      "at": 69.2,
+      "until": 71.0
+    }
+  ],
+  "ambient": [
+    "coin",
+    "alarm_clock",
+    "hourglass_done",
+    "money_bag",
+    "receipt",
+    "purse",
+    "repeat_button",
+    "calendar"
+  ],
+  "beats": [
+    {
+      "id": "b01",
+      "start": 0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "purse"
+        }
+      ],
+      "title": {
+        "text": "40 € PAR MOIS",
+        "at": 0.9,
+        "size": 58
+      },
+      "sub": {
+        "text": "une salle de sport",
+        "at": 2.5
+      }
+    },
+    {
+      "id": "b02",
+      "start": 3.7,
+      "type": "receipt",
+      "label": "AU COMPTEUR",
+      "lines": [
+        {
+          "icon": "calendar",
+          "left": "Mois sans y aller",
+          "right": "6",
+          "at": 4.8
+        },
+        {
+          "icon": "cross_mark",
+          "left": "Résiliation",
+          "right": "non",
+          "at": 6.1,
+          "color": "red"
+        }
+      ],
+      "total": {
+        "label": "DÉJÀ PAYÉ",
+        "to": 240,
+        "at": 5.0,
+        "dur": 1.4
+      }
+    },
+    {
+      "id": "b03",
+      "start": 7.2,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "POURQUOI ?",
+        "at": 7.3,
+        "size": 64
+      }
+    },
+    {
+      "id": "b04",
+      "start": 8.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thought_balloon"
+        }
+      ],
+      "title": {
+        "text": "« J'AI DÉJÀ PAYÉ »",
+        "at": 9.4,
+        "size": 46
+      },
+      "sub": {
+        "text": "votre cerveau se dit",
+        "at": 8.3
+      }
+    },
+    {
+      "id": "b05",
+      "start": 11.1,
+      "type": "chapter",
+      "num": "01",
+      "of": "CHAPITRE 1 SUR 4",
+      "title": "LE COÛT IRRÉCUPÉRABLE",
+      "icon": "money_with_wings",
+      "sub": {
+        "text": "ou biais des coûts engloutis",
+        "at": 13.8
+      }
+    },
+    {
+      "id": "b06",
+      "start": 15.9,
+      "type": "list",
+      "items": [
+        {
+          "icon": "money_with_wings",
+          "text": "De l'argent",
+          "at": 17.1
+        },
+        {
+          "icon": "hourglass_done",
+          "text": "Du temps",
+          "at": 17.9
+        },
+        {
+          "icon": "pencil",
+          "text": "Des efforts",
+          "at": 18.7
+        }
+      ]
+    },
+    {
+      "id": "b07",
+      "start": 19.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "cross_mark"
+        }
+      ],
+      "title": {
+        "text": "IMPOSSIBLE À RÉCUPÉRER",
+        "at": 20.4,
+        "size": 48
+      },
+      "sub": {
+        "text": "quoi que vous décidiez",
+        "at": 21.5
+      }
+    },
+    {
+      "id": "b08",
+      "start": 23.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "graduation_cap"
+        }
+      ],
+      "title": {
+        "text": "LES ÉCONOMISTES",
+        "at": 23.4,
+        "size": 52
+      },
+      "sub": {
+        "text": "seul l'avenir compte",
+        "at": 25.5
+      }
+    },
+    {
+      "id": "b09",
+      "start": 26.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "cross_mark"
+        }
+      ],
+      "title": {
+        "text": "CE QUI EST PARTI EST PARTI",
+        "at": 26.6,
+        "size": 46
+      }
+    },
+    {
+      "id": "b10",
+      "start": 27.7,
+      "type": "chapter",
+      "num": "02",
+      "of": "CHAPITRE 2 SUR 4",
+      "title": "LE CERVEAU DÉTESTE PERDRE",
+      "icon": "brain"
+    },
+    {
+      "id": "b11",
+      "start": 30.6,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "anguished_face"
+        }
+      ],
+      "title": {
+        "text": "ARRÊTER",
+        "at": 30.7,
+        "size": 64
+      },
+      "sub": {
+        "text": "c'est admettre la perte",
+        "at": 31.5
+      }
+    },
+    {
+      "id": "b12",
+      "start": 32.8,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "repeat_button"
+        }
+      ],
+      "title": {
+        "text": "ALORS ON CONTINUE",
+        "at": 33.0,
+        "size": 54
+      },
+      "sub": {
+        "text": "pour ne pas « gaspiller »",
+        "at": 34.1
+      }
+    },
+    {
+      "id": "b13",
+      "start": 36.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "graduation_cap"
+        }
+      ],
+      "title": {
+        "text": "ARKES & BLUMER",
+        "at": 37.6,
+        "size": 52
+      },
+      "sub": {
+        "text": "années 1980",
+        "at": 36.3
+      }
+    },
+    {
+      "id": "b14",
+      "start": 40.0,
+      "type": "versus",
+      "sep": "VS",
+      "label": "Billets de théâtre",
+      "items": [
+        {
+          "icon": "label",
+          "big": "PRIX PLEIN : PLUS DE SPECTACLES",
+          "size": 28,
+          "at": 41.3,
+          "mark_at": 44.0
+        },
+        {
+          "icon": "label",
+          "big": "RÉDUCTION : MOINS DE SPECTACLES",
+          "size": 28,
+          "at": 43.4
+        }
+      ]
+    },
+    {
+      "id": "b15",
+      "start": 46.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "balance_scale"
+        }
+      ],
+      "title": {
+        "text": "MÊME PIÈCE, MÊME PLAISIR",
+        "at": 46.4,
+        "size": 48
+      },
+      "sub": {
+        "text": "mais une dépense passée plus lourde",
+        "at": 48.1
+      }
+    },
+    {
+      "id": "b16",
+      "start": 50.1,
+      "type": "chapter",
+      "num": "03",
+      "of": "CHAPITRE 3 SUR 4",
+      "title": "AU QUOTIDIEN",
+      "icon": "eyes",
+      "sub": {
+        "text": "Vous le vivez tous les jours",
+        "at": 50.3
+      }
+    },
+    {
+      "id": "b17",
+      "start": 51.8,
+      "type": "list",
+      "items": [
+        {
+          "icon": "fork_and_knife_with_plate",
+          "text": "Finir un plat que l'on n'aime pas",
+          "at": 52.0
+        },
+        {
+          "icon": "eyes",
+          "text": "Un film ennuyeux jusqu'au bout",
+          "at": 54.2
+        },
+        {
+          "icon": "repeat_button",
+          "text": "Garder un abonnement inutile",
+          "at": 56.3
+        },
+        {
+          "icon": "clipboard",
+          "text": "Continuer un projet qui ne marche pas",
+          "at": 58.2
+        }
+      ]
+    },
+    {
+      "id": "b18",
+      "start": 60.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "chart_increasing"
+        }
+      ],
+      "title": {
+        "text": "PLUS VOUS INVESTISSEZ",
+        "at": 60.4,
+        "size": 50
+      },
+      "sub": {
+        "text": "plus c'est dur d'arrêter",
+        "at": 61.8
+      }
+    },
+    {
+      "id": "b19",
+      "start": 62.9,
+      "type": "chapter",
+      "num": "04",
+      "of": "CHAPITRE 4 SUR 4",
+      "title": "COMMENT S'EN SORTIR ?",
+      "icon": "light_bulb"
+    },
+    {
+      "id": "b20",
+      "start": 65.0,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "1. LA BONNE QUESTION",
+        "at": 65.4,
+        "size": 54
+      }
+    },
+    {
+      "id": "b21",
+      "start": 66.9,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thought_balloon"
+        }
+      ],
+      "title": {
+        "text": "SI JE N'AVAIS RIEN PAYÉ",
+        "at": 67.1,
+        "size": 48
+      },
+      "sub": {
+        "text": "le ferais-je aujourd'hui ?",
+        "at": 68.6
+      }
+    },
+    {
+      "id": "b22",
+      "start": 69.9,
+      "type": "versus",
+      "sep": "ALORS",
+      "items": [
+        {
+          "icon": "cross_mark",
+          "big": "RÉPONSE : NON",
+          "size": 36,
+          "at": 70.1
+        },
+        {
+          "icon": "check_mark_button",
+          "big": "ARRÊTEZ",
+          "size": 40,
+          "at": 70.8,
+          "mark_at": 71.0
+        }
+      ]
+    },
+    {
+      "id": "b23",
+      "start": 72.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "calendar"
+        }
+      ],
+      "title": {
+        "text": "2. LE COÛT D'AVENIR",
+        "at": 72.7,
+        "size": 52
+      }
+    },
+    {
+      "id": "b24",
+      "start": 74.0,
+      "type": "counter",
+      "icon": "money_with_wings",
+      "label": "Chaque mois de plus",
+      "from": 0,
+      "to": 40,
+      "at": 74.8,
+      "dur": 0.8,
+      "prefix": "+",
+      "suffix": " €"
+    },
+    {
+      "id": "b25",
+      "start": 76.3,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "hourglass_done"
+        }
+      ],
+      "title": {
+        "text": "LE PASSÉ EST PARTI",
+        "at": 76.5,
+        "size": 52
+      },
+      "sub": {
+        "text": "l'avenir, vous pouvez l'économiser",
+        "at": 77.6
+      }
+    },
+    {
+      "id": "b26",
+      "start": 79.4,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "repeat_button"
+        }
+      ],
+      "title": {
+        "text": "CHAQUE MOIS",
+        "at": 79.5,
+        "size": 56
+      },
+      "sub": {
+        "text": "est une nouvelle décision",
+        "at": 80.2
+      }
+    },
+    {
+      "id": "b27",
+      "start": 82.1,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "light_bulb"
+        }
+      ],
+      "title": {
+        "text": "3. UNE LEÇON",
+        "at": 82.4,
+        "size": 56
+      }
+    },
+    {
+      "id": "b28",
+      "start": 84.2,
+      "type": "versus",
+      "sep": "=",
+      "items": [
+        {
+          "icon": "money_with_wings",
+          "big": "CE QUE VOUS AVEZ PAYÉ",
+          "size": 34,
+          "at": 84.4
+        },
+        {
+          "icon": "graduation_cap",
+          "big": "LE PRIX D'UNE LEÇON",
+          "size": 34,
+          "at": 85.4,
+          "mark_at": 86.6
+        }
+      ]
+    },
+    {
+      "id": "b29",
+      "start": 87.5,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "thinking_face"
+        }
+      ],
+      "title": {
+        "text": "ET VOUS ?",
+        "at": 87.6
+      },
+      "sub": {
+        "text": "Quel abonnement sans l'utiliser ?",
+        "at": 88.3
+      }
+    },
+    {
+      "id": "b30",
+      "start": 89.7,
+      "type": "hero",
+      "icons": [
+        {
+          "icon": "speech_balloon"
+        }
+      ],
+      "title": {
+        "text": "VOTRE ABONNEMENT ?",
+        "at": 89.8,
+        "size": 46
+      },
+      "cta": {
+        "icon": "speech_balloon",
+        "text": "Dites-le en commentaire",
+        "at": 90.3
+      }
+    }
+  ],
+  "sfx": {
+    "beat": {
+      "file": "click-soft",
+      "volume": 0.25
+    },
+    "chapter": {
+      "file": "whoosh-short",
+      "volume": 0.4
+    },
+    "cues": [
+      {
+        "at": 5.0,
+        "file": "impact-bass-1",
+        "volume": 0.4
+      },
+      {
+        "at": 17.1,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 17.9,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 18.7,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 44.0,
+        "file": "ping",
+        "volume": 0.35
+      },
+      {
+        "at": 52.0,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 54.2,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 56.3,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 58.2,
+        "file": "pop",
+        "volume": 0.3
+      },
+      {
+        "at": 71.0,
+        "file": "ping",
+        "volume": 0.35
+      },
+      {
+        "at": 74.8,
+        "file": "sparkle",
+        "volume": 0.35
+      },
+      {
+        "at": 86.6,
+        "file": "sparkle",
+        "volume": 0.4
+      },
+      {
+        "at": 90.3,
+        "file": "notification",
+        "volume": 0.35
+      }
+    ]
+  }
+}
